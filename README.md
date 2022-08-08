@@ -21,7 +21,7 @@ As of now, Jenkins executes the test cases every 30 minutes. It can also be conf
 
 - [x] Add base objects
 - [x] Add first test case
-- [ ] Integrate with Jenkins
+- [x] Integrate with Jenkins
 - [ ] Add more test cases
 - [ ] Integrate with Github Actions
 
