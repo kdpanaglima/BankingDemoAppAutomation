@@ -125,8 +125,8 @@
 				<version>2.18.1</version>
 				<configuration>
 					<testFailureIgnore> false </testFailureIgnore>
-					<suiteXmlFiles>
-						<suiteXmlFile>src/test/resources/runner/testng.xml</suiteXmlFile>
+				 	<suiteXmlFiles>
+						<suiteXmlFile>src/test/resources/runner/${TEST_SUITE}</suiteXmlFile>
 
 					</suiteXmlFiles>
 
