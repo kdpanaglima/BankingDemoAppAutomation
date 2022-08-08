@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
+  <test name="Default test(failed)">
+    <classes>
+      <class name="com.parasoft.banking.testcases.VerifyCustomerLogin">
+        <methods>
+          <include name="startingTestCase"/>
+          <include name="TC_003_VerifyLoginSuccessful"/>
+          <include name="TC_001_VerifyEmptyCredentialFields"/>
+          <include name="tearDown"/>
+          <include name="TC_002_VerifyIncorrectCredentials"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.parasoft.banking.testcases.VerifyCustomerLogin -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

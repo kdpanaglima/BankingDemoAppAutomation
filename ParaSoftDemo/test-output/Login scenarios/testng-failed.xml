@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Login scenarios]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="com.parasoft.banking.listeners.CustomListeners"/>
+    <listener class-name="com.parasoft.banking.errorcollectors.TestListenerAdapter"/>
+    <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+    <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+  </listeners>
+  <test name="Customer Account Opening(failed)">
+    <classes>
+      <class name="com.parasoft.banking.testcases.OpenAccount">
+        <methods>
+          <include name="TC_010_OpenNewAccountSuccessfully"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="endingTestCase"/>
+          <include name="startingTestCase"/>
+        </methods>
+      </class> <!-- com.parasoft.banking.testcases.OpenAccount -->
+    </classes>
+  </test> <!-- Customer Account Opening(failed) -->
+</suite> <!-- Failed suite [Login scenarios] -->

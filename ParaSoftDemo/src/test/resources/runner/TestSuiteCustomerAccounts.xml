@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Customer Accounts Scenarios">
+
+	<listeners>
+
+		<listener class-name="com.parasoft.banking.listeners.CustomListeners" />
+
+		<listener class-name="com.parasoft.banking.errorcollectors.TestListenerAdapter" />
+		<listener class-name="org.uncommons.reportng.HTMLReporter" />
+		<listener class-name="org.uncommons.reportng.JUnitXMLReporter" />
+
+	</listeners>
+
+	<test name="Customer Account Opening">
+		<classes>
+			<class name="com.parasoft.banking.testcases.OpenAccount" />
+		</classes>
+	</test>
+
+
+</suite> <!-- Suite -->
