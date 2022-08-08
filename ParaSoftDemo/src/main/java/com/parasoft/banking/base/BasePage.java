@@ -59,7 +59,7 @@ public class BasePage {
 		if(Constants.browser.equals("firefox")){
 			
 			driver = new FirefoxDriver();
-			log.debug("Launching Firefox...");
+			logDebugMessage("Launching Firefox...");
 		}else if(Constants.browser.equals("chrome")){
 			
 			System.setProperty("webdriver.chrome.driver",
@@ -75,14 +75,14 @@ public class BasePage {
 			options.addArguments("--disable-infobars");
 
 			driver = new ChromeDriver(options);
-			log.debug("Launching Chrome...");
+			logDebugMessage("Launching Chrome...");
 		}else if(Constants.browser.equals("ie")){
 			
 			System.setProperty("webdriver.ie.driver",
 					System.getProperty("user.dir") + "\\src\\test\\resources\\executables\\IEDriverServer.exe");
 			
 			driver = new InternetExplorerDriver();
-			log.debug("Launching IE...");
+			logDebugMessage("Launching IE...");
 		}else if(Constants.browser.equals("edge")){
 			
 			System.setProperty("webdriver.edge.driver",
@@ -95,7 +95,7 @@ public class BasePage {
 			EdgeOptions options = new EdgeOptions();
 
 			driver = new EdgeDriver(options);
-			log.debug("Launching Edge...");
+			logDebugMessage("Launching Edge...");
 		}
 		
 		driver.get(Constants.testsiteurl);
@@ -112,7 +112,7 @@ public class BasePage {
 	public static void click(WebElement element) {
 
 		element.click();
-		log.debug("Clicking on an Element : "+element);
+		logDebugMessage("Clicking on an Element : "+element);
 		test.log(LogStatus.INFO, "Clicking on : " + element);
 	}
 	
@@ -121,7 +121,7 @@ public class BasePage {
 
 		element.sendKeys(value);
 
-		log.debug("Typing in an Element : "+element+" entered value as : "+value);
+		logDebugMessage("Typing in an Element : "+element+" entered value as : "+value);
 		
 		test.log(LogStatus.INFO, "Typing in : " + element + " entered value as " + value);
 
@@ -136,6 +136,16 @@ public class BasePage {
 	
 		driver.close();
 		driver.quit();
+	}
+	
+	/**
+	 * Use this to log a Debug message
+	 * */
+	public static void logDebugMessage(String debugMessage) {
+
+		if (log.isDebugEnabled())
+			log.debug(debugMessage);
+			System.out.println(debugMessage);
 	}
 	
 	

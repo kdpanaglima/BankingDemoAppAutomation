@@ -29,7 +29,8 @@ public class VerifyCustomerLogin {
 	
 	@BeforeMethod
 	public void startingTestCase(Method method) {
-		BasePage.log.debug("********** Start of Test Case:  " + method.getName()+ "  **********");
+		BasePage.logDebugMessage("********** Start of Test Case:  " + method.getName()+ "  **********");
+	
 	}
 	
 	@Test(priority=1)
@@ -64,7 +65,7 @@ public class VerifyCustomerLogin {
 	
 	@AfterMethod
 	public void endingTestCase(Method method) {
-		BasePage.log.debug("********** End of Test Case:  " + method.getName()+ "  **********");
+		BasePage.logDebugMessage("********** End of Test Case:  " + method.getName()+ "  **********");
 	}
 	
 	@AfterTest
