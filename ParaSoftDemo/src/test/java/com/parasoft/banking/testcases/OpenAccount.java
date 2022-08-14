@@ -13,17 +13,33 @@ import com.parasoft.banking.errorcollectors.ErrorCollector;
 import com.parasoft.banking.pages.actions.CustomerLogin;
 import com.parasoft.banking.pages.actions.OpenNewAccountPage;
 
-public class OpenAccount {
+public class OpenAccount{
+	
 	@BeforeTest
-	public void setUp(){
-		
+	public void setUp() {
 		BasePage.initConfiguration();
-		
 	}
 	
 	@BeforeMethod
 	public void startingTestCase(Method method) {
-		BasePage.logDebugMessage("********** Start of Test Case:  " + method.getName()+ "  **********");
+		BasePage.logDebugMessage("****************************************************************************************");
+		BasePage.logDebugMessage("********** Start of Test Case: " + method.getName() + "  **********");
+		BasePage.logDebugMessage("****************************************************************************************");
+	}
+	
+	@AfterMethod
+	public void endingTestCase(Method method) {
+		BasePage.logDebugMessage("****************************************************************************************");
+		BasePage.logDebugMessage("********** End of Test Case: " + method.getName()+ "  **********");
+		BasePage.logDebugMessage("****************************************************************************************");
+		
+	}
+	
+	@AfterTest
+	public void tearDown(){
+		if(BasePage.driver!=null){
+			BasePage.quitBrowser();
+		}
 	}
 	
 	@Test(priority=1)
@@ -36,6 +52,15 @@ public class OpenAccount {
 		OpenNewAccountPage openNewAccount = BasePage.accountServicesNav.clickOpenNewAccountLink();
 		openNewAccount.seletAccountType("SAVINGS");
 		openNewAccount.seletAccountNum();
+		/**
+		 * Kevin Panaglima: Below code to be updated with better wait strategy
+		 */
+		try {
+			Thread.sleep(2000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		openNewAccount.clickOpenNewAccount();
 		
 		/**
@@ -52,15 +77,6 @@ public class OpenAccount {
 	}
 	
 	
-	@AfterMethod
-	public void endingTestCase(Method method) {
-		BasePage.logDebugMessage("********** End of Test Case:  " + method.getName()+ "  **********");
-	}
+
 	
-	@AfterTest
-	public void tearDown(){
-		if(BasePage.driver!=null){
-			BasePage.quitBrowser();
-		}
-	}
 }

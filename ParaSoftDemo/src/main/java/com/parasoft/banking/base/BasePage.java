@@ -19,6 +19,7 @@ import org.testng.annotations.BeforeMethod;
 import com.relevantcodes.extentreports.ExtentReports;
 import com.relevantcodes.extentreports.ExtentTest;
 import com.relevantcodes.extentreports.LogStatus;
+import com.gargoylesoftware.htmlunit.util.StringUtils;
 import com.github.javafaker.Faker;
 import com.parasoft.banking.base.Constants;
 import com.parasoft.banking.pages.actions.AccountServicesNavigation;
@@ -59,7 +60,7 @@ public class BasePage {
 		if(Constants.browser.equals("firefox")){
 			
 			driver = new FirefoxDriver();
-			logDebugMessage("Launching Firefox...");
+			logDebugMessage("Launching Firefox Browser...");
 		}else if(Constants.browser.equals("chrome")){
 			
 			System.setProperty("webdriver.chrome.driver",
@@ -75,14 +76,14 @@ public class BasePage {
 			options.addArguments("--disable-infobars");
 
 			driver = new ChromeDriver(options);
-			logDebugMessage("Launching Chrome...");
+			logDebugMessage("Launching Chrome Browser...");
 		}else if(Constants.browser.equals("ie")){
 			
 			System.setProperty("webdriver.ie.driver",
 					System.getProperty("user.dir") + "\\src\\test\\resources\\executables\\IEDriverServer.exe");
 			
 			driver = new InternetExplorerDriver();
-			logDebugMessage("Launching IE...");
+			logDebugMessage("Launching IE Browser...");
 		}else if(Constants.browser.equals("edge")){
 			
 			System.setProperty("webdriver.edge.driver",
@@ -95,7 +96,7 @@ public class BasePage {
 			EdgeOptions options = new EdgeOptions();
 
 			driver = new EdgeDriver(options);
-			logDebugMessage("Launching Edge...");
+			logDebugMessage("Launching Edge Browser...");
 		}
 		
 		driver.get(Constants.testsiteurl);
@@ -112,8 +113,8 @@ public class BasePage {
 	public static void click(WebElement element) {
 
 		element.click();
-		logDebugMessage("Clicking on an Element : "+element);
-		test.log(LogStatus.INFO, "Clicking on : " + element);
+		logDebugMessage("Clicked element:"+trimElement(element.toString()));
+		test.log(LogStatus.INFO, "Clicked element" + trimElement(element.toString()));
 	}
 	
 	
@@ -121,9 +122,9 @@ public class BasePage {
 
 		element.sendKeys(value);
 
-		logDebugMessage("Typing in an Element : "+element+" entered value as : "+value);
+		logDebugMessage("Entered text " + value + " in element" + trimElement(element.toString()));
 		
-		test.log(LogStatus.INFO, "Typing in : " + element + " entered value as " + value);
+		test.log(LogStatus.INFO, "Entered text " + value + " in element" + trimElement(element.toString()));
 
 	}
 	
@@ -146,6 +147,17 @@ public class BasePage {
 		if (log.isDebugEnabled())
 			log.debug(debugMessage);
 			System.out.println(debugMessage);
+	}
+	
+	/**
+	 * Removed unnecessary platform text due from page factory
+	 * @param element
+	 * @return
+	 */
+	
+	public static String trimElement(String element) {
+		
+		return element.replaceFirst("(.*)>","");
 	}
 	
 	

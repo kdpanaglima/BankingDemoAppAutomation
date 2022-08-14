@@ -21,16 +21,30 @@ import com.relevantcodes.extentreports.LogStatus;
 public class VerifyCustomerLogin {
 	
 	@BeforeTest
-	public void setUp(){
-		
+	public void setUp() {
 		BasePage.initConfiguration();
-		
 	}
 	
 	@BeforeMethod
 	public void startingTestCase(Method method) {
-		BasePage.logDebugMessage("********** Start of Test Case:  " + method.getName()+ "  **********");
+		BasePage.logDebugMessage("****************************************************************************************");
+		BasePage.logDebugMessage("********** Start of Test Case: " + method.getName() + "  **********");
+		BasePage.logDebugMessage("****************************************************************************************");
+	}
 	
+	@AfterMethod
+	public void endingTestCase(Method method) {
+		BasePage.logDebugMessage("****************************************************************************************");
+		BasePage.logDebugMessage("********** End of Test Case: " + method.getName()+ "  **********");
+		BasePage.logDebugMessage("****************************************************************************************");
+		
+	}
+	
+	@AfterTest
+	public void tearDown(){
+		if(BasePage.driver!=null){
+			BasePage.quitBrowser();
+		}
 	}
 	
 	@Test(priority=1)
@@ -63,15 +77,5 @@ public class VerifyCustomerLogin {
 		
 	}
 	
-	@AfterMethod
-	public void endingTestCase(Method method) {
-		BasePage.logDebugMessage("********** End of Test Case:  " + method.getName()+ "  **********");
-	}
 	
-	@AfterTest
-	public void tearDown(){
-		if(BasePage.driver!=null){
-			BasePage.quitBrowser();
-		}
-	}
 }
