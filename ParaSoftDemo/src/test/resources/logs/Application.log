@@ -1,0 +1,12 @@
+15/08/2022 00:10:15 TestLogger Launching Chrome Browser...
+15/08/2022 00:10:18 TestLogger ****************************************************************************************
+15/08/2022 00:10:18 TestLogger ********** Start of Test Case: TC_010_OpenNewAccountSuccessfully  **********
+15/08/2022 00:10:18 TestLogger ****************************************************************************************
+15/08/2022 00:10:19 TestLogger Entered text john in element css selector: [name='username']]
+15/08/2022 00:10:19 TestLogger Entered text demo in element css selector: [name='password']]
+15/08/2022 00:10:30 TestLogger Clicked element:Proxy element for: AjaxElementLocator 'By.cssSelector: [value='Log In']'
+15/08/2022 00:10:42 TestLogger Clicked element: link text: Open New Account]
+15/08/2022 00:10:44 TestLogger Clicked element: css selector: [value='Open New Account']]
+15/08/2022 00:10:47 TestLogger ****************************************************************************************
+15/08/2022 00:10:47 TestLogger ********** End of Test Case: TC_010_OpenNewAccountSuccessfully  **********
+15/08/2022 00:10:47 TestLogger ****************************************************************************************
