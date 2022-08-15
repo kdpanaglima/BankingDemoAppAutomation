@@ -10,3 +10,482 @@
 15/08/2022 00:10:47 TestLogger ****************************************************************************************
 15/08/2022 00:10:47 TestLogger ********** End of Test Case: TC_010_OpenNewAccountSuccessfully  **********
 15/08/2022 00:10:47 TestLogger ****************************************************************************************
+15/08/2022 00:16:11 TestLogger Launching Chrome Browser...
+15/08/2022 00:16:11 TestLogger Launching Chrome Browser...
+15/08/2022 00:36:03 TestLogger Launching Chrome Browser...
+15/08/2022 00:36:03 TestLogger Launching Chrome Browser...
+15/08/2022 00:36:45 TestLogger Launching Chrome Browser...
+15/08/2022 00:36:49 TestLogger Launching Chrome Browser...
+15/08/2022 00:37:55 TestLogger Launching Chrome Browser...
+15/08/2022 00:37:58 TestLogger ****************************************************************************************
+15/08/2022 00:37:58 TestLogger ********** Start of Test Case: TC_001_VerifyEmptyCredentialFields  **********
+15/08/2022 00:37:58 TestLogger ****************************************************************************************
+15/08/2022 00:37:59 TestLogger Clicked element: css selector: [value='Log In']]
+15/08/2022 00:37:59 TestLogger ****************************************************************************************
+15/08/2022 00:37:59 TestLogger ********** End of Test Case: TC_001_VerifyEmptyCredentialFields  **********
+15/08/2022 00:37:59 TestLogger ****************************************************************************************
+15/08/2022 00:37:59 TestLogger ****************************************************************************************
+15/08/2022 00:37:59 TestLogger ********** Start of Test Case: TC_002_VerifyIncorrectCredentials  **********
+15/08/2022 00:37:59 TestLogger ****************************************************************************************
+15/08/2022 00:37:59 TestLogger Entered text Radwimps in element css selector: [name='username']]
+15/08/2022 00:37:59 TestLogger Entered text j)881-+jsAs in element css selector: [name='password']]
+15/08/2022 00:38:00 TestLogger Clicked element: css selector: [value='Log In']]
+15/08/2022 00:38:03 TestLogger ****************************************************************************************
+15/08/2022 00:38:03 TestLogger ********** End of Test Case: TC_002_VerifyIncorrectCredentials  **********
+15/08/2022 00:38:03 TestLogger ****************************************************************************************
+15/08/2022 00:38:03 TestLogger ****************************************************************************************
+15/08/2022 00:38:03 TestLogger ********** Start of Test Case: TC_003_VerifyLoginSuccessful  **********
+15/08/2022 00:38:03 TestLogger ****************************************************************************************
+15/08/2022 00:38:03 TestLogger Entered text john in element css selector: [name='username']]
+15/08/2022 00:38:03 TestLogger Entered text demo in element css selector: [name='password']]
+15/08/2022 00:38:15 TestLogger Clicked element:Proxy element for: AjaxElementLocator 'By.cssSelector: [value='Log In']'
+15/08/2022 00:38:25 TestLogger ****************************************************************************************
+15/08/2022 00:38:25 TestLogger ********** End of Test Case: TC_003_VerifyLoginSuccessful  **********
+15/08/2022 00:38:25 TestLogger ****************************************************************************************
+15/08/2022 00:38:27 TestLogger Launching Chrome Browser...
+15/08/2022 00:38:31 TestLogger ****************************************************************************************
+15/08/2022 00:38:31 TestLogger ********** Start of Test Case: TC_004_RegisterCustomerSuccessfully  **********
+15/08/2022 00:38:31 TestLogger ****************************************************************************************
+15/08/2022 00:38:33 TestLogger Clicked element: link text: Register]
+15/08/2022 00:38:33 TestLogger Entered text John in element css selector: [name='customer.firstName']]
+15/08/2022 00:38:33 TestLogger Entered text Doe in element css selector: [name='customer.lastName']]
+15/08/2022 00:38:34 TestLogger Entered text light street in element css selector: [name='customer.address.street']]
+15/08/2022 00:38:34 TestLogger Entered text Dallas in element css selector: [name='customer.address.city']]
+15/08/2022 00:38:34 TestLogger Entered text Texas in element css selector: [name='customer.address.state']]
+15/08/2022 00:38:34 TestLogger Entered text 5122 in element css selector: [name='customer.address.zipCode']]
+15/08/2022 00:38:35 TestLogger Entered text 0001 in element css selector: [name='customer.phoneNumber']]
+15/08/2022 00:38:35 TestLogger Entered text 4123-1233 in element css selector: [name='customer.ssn']]
+15/08/2022 00:38:35 TestLogger Entered text Gearldine in element css selector: [name='customer.username']]
+15/08/2022 00:38:36 TestLogger Entered text rain in element css selector: [name='customer.password']]
+15/08/2022 00:38:36 TestLogger Entered text rain in element css selector: [name='repeatedPassword']]
+15/08/2022 00:38:47 TestLogger Clicked element:Proxy element for: AjaxElementLocator 'By.cssSelector: [value='Register']'
+15/08/2022 00:38:57 TestLogger ****************************************************************************************
+15/08/2022 00:38:57 TestLogger ********** End of Test Case: TC_004_RegisterCustomerSuccessfully  **********
+15/08/2022 00:38:57 TestLogger ****************************************************************************************
+15/08/2022 01:03:14 TestLogger Launching Chrome Browser...
+15/08/2022 01:03:18 TestLogger ****************************************************************************************
+15/08/2022 01:03:18 TestLogger ********** Start of Test Case: TC_001_VerifyEmptyCredentialFields  **********
+15/08/2022 01:03:18 TestLogger ****************************************************************************************
+15/08/2022 01:03:20 TestLogger Clicked element: css selector: [value='Log In']]
+15/08/2022 01:03:20 TestLogger ****************************************************************************************
+15/08/2022 01:03:20 TestLogger ********** End of Test Case: TC_001_VerifyEmptyCredentialFields  **********
+15/08/2022 01:03:20 TestLogger ****************************************************************************************
+15/08/2022 01:03:21 TestLogger ****************************************************************************************
+15/08/2022 01:03:21 TestLogger ********** Start of Test Case: TC_002_VerifyIncorrectCredentials  **********
+15/08/2022 01:03:21 TestLogger ****************************************************************************************
+15/08/2022 01:03:21 TestLogger Entered text Radwimps in element css selector: [name='username']]
+15/08/2022 01:03:21 TestLogger Entered text j)881-+jsAs in element css selector: [name='password']]
+15/08/2022 01:03:21 TestLogger Clicked element: css selector: [value='Log In']]
+15/08/2022 01:03:23 TestLogger ****************************************************************************************
+15/08/2022 01:03:23 TestLogger ********** End of Test Case: TC_002_VerifyIncorrectCredentials  **********
+15/08/2022 01:03:23 TestLogger ****************************************************************************************
+15/08/2022 01:03:23 TestLogger ****************************************************************************************
+15/08/2022 01:03:23 TestLogger ********** Start of Test Case: TC_003_VerifyLoginSuccessful  **********
+15/08/2022 01:03:23 TestLogger ****************************************************************************************
+15/08/2022 01:03:23 TestLogger Entered text john in element css selector: [name='username']]
+15/08/2022 01:03:23 TestLogger Entered text demo in element css selector: [name='password']]
+15/08/2022 01:31:53 TestLogger Launching Chrome Browser...
+15/08/2022 01:31:59 TestLogger Launching Chrome Browser...
+15/08/2022 01:32:02 TestLogger ****************************************************************************************
+15/08/2022 01:32:02 TestLogger ********** Start of Test Case: TC_001_VerifyEmptyCredentialFields  **********
+15/08/2022 01:32:02 TestLogger ****************************************************************************************
+15/08/2022 01:32:03 TestLogger ****************************************************************************************
+15/08/2022 01:32:03 TestLogger ********** End of Test Case: TC_001_VerifyEmptyCredentialFields  **********
+15/08/2022 01:32:03 TestLogger ****************************************************************************************
+15/08/2022 01:32:05 TestLogger Launching Chrome Browser...
+15/08/2022 01:32:08 TestLogger ****************************************************************************************
+15/08/2022 01:32:08 TestLogger ********** Start of Test Case: TC_002_VerifyIncorrectCredentials  **********
+15/08/2022 01:32:08 TestLogger ****************************************************************************************
+15/08/2022 01:32:08 TestLogger ****************************************************************************************
+15/08/2022 01:32:08 TestLogger ********** End of Test Case: TC_002_VerifyIncorrectCredentials  **********
+15/08/2022 01:32:08 TestLogger ****************************************************************************************
+15/08/2022 01:35:37 TestLogger Launching Chrome Browser...
+15/08/2022 01:35:41 TestLogger Launching Chrome Browser...
+15/08/2022 01:35:44 TestLogger ****************************************************************************************
+15/08/2022 01:35:44 TestLogger ********** Start of Test Case: TC_001_VerifyEmptyCredentialFields  **********
+15/08/2022 01:35:44 TestLogger ****************************************************************************************
+15/08/2022 01:35:44 TestLogger ****************************************************************************************
+15/08/2022 01:35:44 TestLogger ********** End of Test Case: TC_001_VerifyEmptyCredentialFields  **********
+15/08/2022 01:35:44 TestLogger ****************************************************************************************
+15/08/2022 01:35:45 TestLogger Launching Chrome Browser...
+15/08/2022 01:35:48 TestLogger ****************************************************************************************
+15/08/2022 01:35:48 TestLogger ********** Start of Test Case: TC_002_VerifyIncorrectCredentials  **********
+15/08/2022 01:35:48 TestLogger ****************************************************************************************
+15/08/2022 01:35:48 TestLogger ****************************************************************************************
+15/08/2022 01:35:48 TestLogger ********** End of Test Case: TC_002_VerifyIncorrectCredentials  **********
+15/08/2022 01:35:48 TestLogger ****************************************************************************************
+15/08/2022 01:35:50 TestLogger Launching Chrome Browser...
+15/08/2022 01:35:53 TestLogger ****************************************************************************************
+15/08/2022 01:35:53 TestLogger ********** Start of Test Case: TC_003_VerifyLoginSuccessful  **********
+15/08/2022 01:35:53 TestLogger ****************************************************************************************
+15/08/2022 01:35:53 TestLogger ****************************************************************************************
+15/08/2022 01:35:53 TestLogger ********** End of Test Case: TC_003_VerifyLoginSuccessful  **********
+15/08/2022 01:35:53 TestLogger ****************************************************************************************
+15/08/2022 01:35:55 TestLogger Launching Chrome Browser...
+15/08/2022 01:36:00 TestLogger Launching Chrome Browser...
+15/08/2022 01:36:06 TestLogger ****************************************************************************************
+15/08/2022 01:36:06 TestLogger ********** Start of Test Case: TC_004_RegisterCustomerSuccessfully  **********
+15/08/2022 01:36:06 TestLogger ****************************************************************************************
+15/08/2022 01:36:06 TestLogger ****************************************************************************************
+15/08/2022 01:36:06 TestLogger ********** End of Test Case: TC_004_RegisterCustomerSuccessfully  **********
+15/08/2022 01:36:06 TestLogger ****************************************************************************************
+15/08/2022 01:37:27 TestLogger Launching Chrome Browser...
+15/08/2022 01:37:36 TestLogger Launching Chrome Browser...
+15/08/2022 01:39:21 TestLogger Launching Chrome Browser...
+15/08/2022 01:39:25 TestLogger Launching Chrome Browser...
+15/08/2022 01:41:16 TestLogger Launching Chrome Browser...
+15/08/2022 01:42:05 TestLogger Launching Chrome Browser...
+15/08/2022 01:43:29 TestLogger Launching Chrome Browser...
+15/08/2022 01:46:06 TestLogger Launching Chrome Browser...
+15/08/2022 01:48:19 TestLogger Launching Chrome Browser...
+15/08/2022 01:49:57 TestLogger Launching Chrome Browser...
+15/08/2022 01:51:36 TestLogger Launching Chrome Browser...
+15/08/2022 01:51:44 TestLogger Launching Chrome Browser...
+15/08/2022 01:51:44 TestLogger Launching Chrome Browser...
+15/08/2022 01:51:44 TestLogger Launching Chrome Browser...
+15/08/2022 01:51:47 TestLogger ****************************************************************************************
+15/08/2022 01:51:47 TestLogger ********** Start of Test Case: TC_001_VerifyEmptyCredentialFields  **********
+15/08/2022 01:51:47 TestLogger ****************************************************************************************
+15/08/2022 01:51:47 TestLogger ****************************************************************************************
+15/08/2022 01:51:47 TestLogger ********** End of Test Case: TC_001_VerifyEmptyCredentialFields  **********
+15/08/2022 01:51:47 TestLogger ****************************************************************************************
+15/08/2022 01:51:48 TestLogger ****************************************************************************************
+15/08/2022 01:51:48 TestLogger ********** Start of Test Case: TC_003_VerifyLoginSuccessful  **********
+15/08/2022 01:51:48 TestLogger ****************************************************************************************
+15/08/2022 01:51:48 TestLogger ****************************************************************************************
+15/08/2022 01:51:48 TestLogger ********** Start of Test Case: TC_002_VerifyIncorrectCredentials  **********
+15/08/2022 01:51:48 TestLogger ****************************************************************************************
+15/08/2022 01:51:48 TestLogger ****************************************************************************************
+15/08/2022 01:51:48 TestLogger ********** End of Test Case: TC_003_VerifyLoginSuccessful  **********
+15/08/2022 01:51:48 TestLogger ****************************************************************************************
+15/08/2022 01:51:48 TestLogger ****************************************************************************************
+15/08/2022 01:51:48 TestLogger ********** End of Test Case: TC_002_VerifyIncorrectCredentials  **********
+15/08/2022 01:51:48 TestLogger ****************************************************************************************
+15/08/2022 19:06:11 TestLogger Launching Chrome Browser...
+15/08/2022 19:06:17 TestLogger Launching Chrome Browser...
+15/08/2022 19:06:23 TestLogger ****************************************************************************************
+15/08/2022 19:06:23 TestLogger ********** Start of Test Case: TC_010_OpenNewAccountSuccessfully  **********
+15/08/2022 19:06:23 TestLogger ****************************************************************************************
+15/08/2022 19:06:23 TestLogger ****************************************************************************************
+15/08/2022 19:06:23 TestLogger ********** End of Test Case: TC_010_OpenNewAccountSuccessfully  **********
+15/08/2022 19:06:23 TestLogger ****************************************************************************************
+15/08/2022 19:24:06 TestLogger Launching Chrome Browser...
+15/08/2022 19:24:14 TestLogger Launching Chrome Browser...
+15/08/2022 19:24:14 TestLogger Launching Chrome Browser...
+15/08/2022 19:24:14 TestLogger Launching Chrome Browser...
+15/08/2022 19:24:18 TestLogger ****************************************************************************************
+15/08/2022 19:24:18 TestLogger ********** Start of Test Case: TC_002_VerifyIncorrectCredentials  **********
+15/08/2022 19:24:18 TestLogger ****************************************************************************************
+15/08/2022 19:24:18 TestLogger Entered text Radwimps in element css selector: [name='username']]
+15/08/2022 19:24:18 TestLogger ****************************************************************************************
+15/08/2022 19:24:18 TestLogger ********** Start of Test Case: TC_003_VerifyLoginSuccessful  **********
+15/08/2022 19:24:18 TestLogger ****************************************************************************************
+15/08/2022 19:24:18 TestLogger Entered text j)881-+jsAs in element css selector: [name='password']]
+15/08/2022 19:24:19 TestLogger Entered text john in element css selector: [name='username']]
+15/08/2022 19:24:19 TestLogger Entered text demo in element css selector: [name='password']]
+15/08/2022 19:24:20 TestLogger ****************************************************************************************
+15/08/2022 19:24:20 TestLogger ********** Start of Test Case: TC_001_VerifyEmptyCredentialFields  **********
+15/08/2022 19:24:20 TestLogger ****************************************************************************************
+15/08/2022 19:24:22 TestLogger Clicked element: css selector: [value='Log In']]
+15/08/2022 19:24:22 TestLogger Clicked element: css selector: [value='Log In']]
+15/08/2022 19:24:23 TestLogger ****************************************************************************************
+15/08/2022 19:24:23 TestLogger ********** End of Test Case: TC_001_VerifyEmptyCredentialFields  **********
+15/08/2022 19:24:23 TestLogger ****************************************************************************************
+15/08/2022 19:24:24 TestLogger ****************************************************************************************
+15/08/2022 19:24:24 TestLogger ********** End of Test Case: TC_002_VerifyIncorrectCredentials  **********
+15/08/2022 19:24:24 TestLogger ****************************************************************************************
+15/08/2022 19:24:32 TestLogger Clicked element:Proxy element for: AjaxElementLocator 'By.cssSelector: [value='Log In']'
+15/08/2022 19:24:43 TestLogger ****************************************************************************************
+15/08/2022 19:24:43 TestLogger ********** End of Test Case: TC_003_VerifyLoginSuccessful  **********
+15/08/2022 19:24:43 TestLogger ****************************************************************************************
+15/08/2022 19:27:37 TestLogger Launching Chrome Browser...
+15/08/2022 19:27:43 TestLogger Launching Chrome Browser...
+15/08/2022 19:27:43 TestLogger Launching Chrome Browser...
+15/08/2022 19:27:43 TestLogger Launching Chrome Browser...
+15/08/2022 19:27:47 TestLogger ****************************************************************************************
+15/08/2022 19:27:47 TestLogger ********** Start of Test Case: TC_003_VerifyLoginSuccessful  **********
+15/08/2022 19:27:47 TestLogger ****************************************************************************************
+15/08/2022 19:27:47 TestLogger Entered text john in element css selector: [name='username']]
+15/08/2022 19:27:47 TestLogger Entered text demo in element css selector: [name='password']]
+15/08/2022 19:27:47 TestLogger ****************************************************************************************
+15/08/2022 19:27:47 TestLogger ********** Start of Test Case: TC_002_VerifyIncorrectCredentials  **********
+15/08/2022 19:27:47 TestLogger ****************************************************************************************
+15/08/2022 19:27:48 TestLogger Entered text Radwimps in element css selector: [name='username']]
+15/08/2022 19:27:48 TestLogger ****************************************************************************************
+15/08/2022 19:27:48 TestLogger ********** Start of Test Case: TC_001_VerifyEmptyCredentialFields  **********
+15/08/2022 19:27:48 TestLogger ****************************************************************************************
+15/08/2022 19:27:48 TestLogger Entered text j)881-+jsAs in element css selector: [name='password']]
+15/08/2022 19:27:49 TestLogger Clicked element: css selector: [value='Log In']]
+15/08/2022 19:27:50 TestLogger Clicked element: css selector: [value='Log In']]
+15/08/2022 19:27:50 TestLogger ****************************************************************************************
+15/08/2022 19:27:50 TestLogger ********** End of Test Case: TC_001_VerifyEmptyCredentialFields  **********
+15/08/2022 19:27:50 TestLogger ****************************************************************************************
+15/08/2022 19:27:51 TestLogger ****************************************************************************************
+15/08/2022 19:27:51 TestLogger ********** End of Test Case: TC_002_VerifyIncorrectCredentials  **********
+15/08/2022 19:27:51 TestLogger ****************************************************************************************
+15/08/2022 19:27:59 TestLogger Clicked element:Proxy element for: AjaxElementLocator 'By.cssSelector: [value='Log In']'
+15/08/2022 19:28:10 TestLogger ****************************************************************************************
+15/08/2022 19:28:10 TestLogger ********** End of Test Case: TC_003_VerifyLoginSuccessful  **********
+15/08/2022 19:28:10 TestLogger ****************************************************************************************
+15/08/2022 19:56:16 TestLogger Launching Chrome Browser...
+15/08/2022 19:56:24 TestLogger Launching Chrome Browser...
+15/08/2022 19:56:24 TestLogger Launching Chrome Browser...
+15/08/2022 19:56:24 TestLogger Launching Chrome Browser...
+15/08/2022 19:56:28 TestLogger ****************************************************************************************
+15/08/2022 19:56:28 TestLogger ********** Start of Test Case: TC_002_VerifyIncorrectCredentials  **********
+15/08/2022 19:56:28 TestLogger ****************************************************************************************
+15/08/2022 19:56:29 TestLogger ****************************************************************************************
+15/08/2022 19:56:29 TestLogger ********** Start of Test Case: TC_003_VerifyLoginSuccessful  **********
+15/08/2022 19:56:29 TestLogger ****************************************************************************************
+15/08/2022 19:56:29 TestLogger Entered text john in element css selector: [name='username']]
+15/08/2022 19:56:29 TestLogger Entered text Radwimps in element css selector: [name='username']]
+15/08/2022 19:56:29 TestLogger Entered text demo in element css selector: [name='password']]
+15/08/2022 19:56:29 TestLogger ****************************************************************************************
+15/08/2022 19:56:29 TestLogger ********** Start of Test Case: TC_001_VerifyEmptyCredentialFields  **********
+15/08/2022 19:56:29 TestLogger ****************************************************************************************
+15/08/2022 19:56:29 TestLogger Entered text j)881-+jsAs in element css selector: [name='password']]
+15/08/2022 19:56:32 TestLogger Clicked element: css selector: [value='Log In']]
+15/08/2022 19:56:33 TestLogger Clicked element: css selector: [value='Log In']]
+15/08/2022 19:56:33 TestLogger ****************************************************************************************
+15/08/2022 19:56:33 TestLogger ********** End of Test Case: TC_001_VerifyEmptyCredentialFields  **********
+15/08/2022 19:56:33 TestLogger ****************************************************************************************
+15/08/2022 19:56:34 TestLogger ****************************************************************************************
+15/08/2022 19:56:34 TestLogger ********** End of Test Case: TC_002_VerifyIncorrectCredentials  **********
+15/08/2022 19:56:34 TestLogger ****************************************************************************************
+15/08/2022 19:56:43 TestLogger Clicked element:Proxy element for: AjaxElementLocator 'By.cssSelector: [value='Log In']'
+15/08/2022 19:56:53 TestLogger ****************************************************************************************
+15/08/2022 19:56:53 TestLogger ********** End of Test Case: TC_003_VerifyLoginSuccessful  **********
+15/08/2022 19:56:53 TestLogger ****************************************************************************************
+15/08/2022 19:56:55 TestLogger Launching Chrome Browser...
+15/08/2022 19:57:04 TestLogger Launching Chrome Browser...
+15/08/2022 19:57:12 TestLogger ****************************************************************************************
+15/08/2022 19:57:12 TestLogger ********** Start of Test Case: TC_004_RegisterCustomerSuccessfully  **********
+15/08/2022 19:57:12 TestLogger ****************************************************************************************
+15/08/2022 19:57:19 TestLogger Clicked element: link text: Register]
+15/08/2022 19:57:19 TestLogger Entered text John in element css selector: [name='customer.firstName']]
+15/08/2022 19:57:19 TestLogger Entered text Doe in element css selector: [name='customer.lastName']]
+15/08/2022 19:57:20 TestLogger Entered text light street in element css selector: [name='customer.address.street']]
+15/08/2022 19:57:20 TestLogger Entered text Dallas in element css selector: [name='customer.address.city']]
+15/08/2022 19:57:20 TestLogger Entered text Texas in element css selector: [name='customer.address.state']]
+15/08/2022 19:57:20 TestLogger Entered text 5122 in element css selector: [name='customer.address.zipCode']]
+15/08/2022 19:57:20 TestLogger Entered text 0001 in element css selector: [name='customer.phoneNumber']]
+15/08/2022 19:57:20 TestLogger Entered text 4123-1233 in element css selector: [name='customer.ssn']]
+15/08/2022 19:57:21 TestLogger Entered text Lucius in element css selector: [name='customer.username']]
+15/08/2022 19:57:21 TestLogger Entered text rain in element css selector: [name='customer.password']]
+15/08/2022 19:57:21 TestLogger Entered text rain in element css selector: [name='repeatedPassword']]
+15/08/2022 19:57:34 TestLogger Clicked element:Proxy element for: AjaxElementLocator 'By.cssSelector: [value='Register']'
+15/08/2022 19:57:44 TestLogger ****************************************************************************************
+15/08/2022 19:57:44 TestLogger ********** End of Test Case: TC_004_RegisterCustomerSuccessfully  **********
+15/08/2022 19:57:44 TestLogger ****************************************************************************************
+15/08/2022 21:24:09 TestLogger Launching Chrome Browser...
+15/08/2022 21:24:17 TestLogger Launching Chrome Browser...
+15/08/2022 21:24:23 TestLogger ****************************************************************************************
+15/08/2022 21:24:23 TestLogger ********** Start of Test Case: TC_001_VerifyEmptyCredentialFields  **********
+15/08/2022 21:24:23 TestLogger ****************************************************************************************
+15/08/2022 21:24:24 TestLogger Launching Chrome Browser...
+15/08/2022 21:24:26 TestLogger Clicked element: css selector: [value='Log In']]
+15/08/2022 21:24:27 TestLogger ****************************************************************************************
+15/08/2022 21:24:27 TestLogger ********** End of Test Case: TC_001_VerifyEmptyCredentialFields  **********
+15/08/2022 21:24:27 TestLogger ****************************************************************************************
+15/08/2022 21:24:28 TestLogger ****************************************************************************************
+15/08/2022 21:24:28 TestLogger ********** Start of Test Case: TC_002_VerifyIncorrectCredentials  **********
+15/08/2022 21:24:28 TestLogger ****************************************************************************************
+15/08/2022 21:24:28 TestLogger Entered text Radwimps in element css selector: [name='username']]
+15/08/2022 21:24:29 TestLogger Entered text j)881-+jsAs in element css selector: [name='password']]
+15/08/2022 21:24:30 TestLogger Launching Chrome Browser...
+15/08/2022 21:24:34 TestLogger Clicked element: css selector: [value='Log In']]
+15/08/2022 21:24:35 TestLogger ****************************************************************************************
+15/08/2022 21:24:35 TestLogger ********** End of Test Case: TC_002_VerifyIncorrectCredentials  **********
+15/08/2022 21:24:35 TestLogger ****************************************************************************************
+15/08/2022 21:24:38 TestLogger ****************************************************************************************
+15/08/2022 21:24:38 TestLogger ********** Start of Test Case: TC_003_VerifyLoginSuccessful  **********
+15/08/2022 21:24:38 TestLogger ****************************************************************************************
+15/08/2022 21:24:39 TestLogger Entered text john in element css selector: [name='username']]
+15/08/2022 21:24:39 TestLogger Entered text demo in element css selector: [name='password']]
+15/08/2022 21:25:00 TestLogger Clicked element:Proxy element for: AjaxElementLocator 'By.cssSelector: [value='Log In']'
+15/08/2022 21:25:10 TestLogger ****************************************************************************************
+15/08/2022 21:25:10 TestLogger ********** End of Test Case: TC_003_VerifyLoginSuccessful  **********
+15/08/2022 21:25:10 TestLogger ****************************************************************************************
+15/08/2022 21:25:12 TestLogger Launching Chrome Browser...
+15/08/2022 21:25:26 TestLogger Launching Chrome Browser...
+15/08/2022 21:25:46 TestLogger ****************************************************************************************
+15/08/2022 21:25:46 TestLogger ********** Start of Test Case: TC_004_RegisterCustomerSuccessfully  **********
+15/08/2022 21:25:46 TestLogger ****************************************************************************************
+15/08/2022 21:26:21 TestLogger Clicked element: link text: Register]
+15/08/2022 21:26:21 TestLogger Entered text John in element css selector: [name='customer.firstName']]
+15/08/2022 21:26:21 TestLogger Entered text Doe in element css selector: [name='customer.lastName']]
+15/08/2022 21:26:22 TestLogger Entered text light street in element css selector: [name='customer.address.street']]
+15/08/2022 21:26:22 TestLogger Entered text Dallas in element css selector: [name='customer.address.city']]
+15/08/2022 21:26:22 TestLogger Entered text Texas in element css selector: [name='customer.address.state']]
+15/08/2022 21:26:22 TestLogger Entered text 5122 in element css selector: [name='customer.address.zipCode']]
+15/08/2022 21:26:22 TestLogger Entered text 0001 in element css selector: [name='customer.phoneNumber']]
+15/08/2022 21:26:22 TestLogger Entered text 4123-1233 in element css selector: [name='customer.ssn']]
+15/08/2022 21:26:23 TestLogger Entered text Kayleen in element css selector: [name='customer.username']]
+15/08/2022 21:26:23 TestLogger Entered text rain in element css selector: [name='customer.password']]
+15/08/2022 21:26:23 TestLogger Entered text rain in element css selector: [name='repeatedPassword']]
+15/08/2022 21:26:42 TestLogger Clicked element:Proxy element for: AjaxElementLocator 'By.cssSelector: [value='Register']'
+15/08/2022 21:26:52 TestLogger ****************************************************************************************
+15/08/2022 21:26:52 TestLogger ********** End of Test Case: TC_004_RegisterCustomerSuccessfully  **********
+15/08/2022 21:26:52 TestLogger ****************************************************************************************
+15/08/2022 21:39:31 TestLogger Launching Chrome Browser...
+15/08/2022 21:39:45 TestLogger Launching Chrome Browser...
+15/08/2022 21:39:53 TestLogger ****************************************************************************************
+15/08/2022 21:39:53 TestLogger ********** Start of Test Case: TC_002_VerifyIncorrectCredentials  **********
+15/08/2022 21:39:53 TestLogger ****************************************************************************************
+15/08/2022 21:39:53 TestLogger Entered text Radwimps in element css selector: [name='username']]
+15/08/2022 21:39:53 TestLogger Entered text j)881-+jsAs in element css selector: [name='password']]
+15/08/2022 21:39:55 TestLogger Launching Chrome Browser...
+15/08/2022 21:39:58 TestLogger Clicked element: css selector: [value='Log In']]
+15/08/2022 21:40:00 TestLogger ****************************************************************************************
+15/08/2022 21:40:00 TestLogger ********** End of Test Case: TC_002_VerifyIncorrectCredentials  **********
+15/08/2022 21:40:00 TestLogger ****************************************************************************************
+15/08/2022 21:40:07 TestLogger ****************************************************************************************
+15/08/2022 21:40:07 TestLogger ********** Start of Test Case: TC_003_VerifyLoginSuccessful  **********
+15/08/2022 21:40:07 TestLogger ****************************************************************************************
+15/08/2022 21:40:08 TestLogger Entered text john in element css selector: [name='username']]
+15/08/2022 21:40:08 TestLogger Entered text demo in element css selector: [name='password']]
+15/08/2022 21:40:09 TestLogger Launching Chrome Browser...
+15/08/2022 21:40:15 TestLogger ****************************************************************************************
+15/08/2022 21:40:15 TestLogger ********** Start of Test Case: TC_001_VerifyEmptyCredentialFields  **********
+15/08/2022 21:40:15 TestLogger ****************************************************************************************
+15/08/2022 21:40:22 TestLogger Clicked element: css selector: [value='Log In']]
+15/08/2022 21:40:22 TestLogger ****************************************************************************************
+15/08/2022 21:40:22 TestLogger ********** End of Test Case: TC_001_VerifyEmptyCredentialFields  **********
+15/08/2022 21:40:22 TestLogger ****************************************************************************************
+15/08/2022 21:40:25 TestLogger Clicked element:Proxy element for: AjaxElementLocator 'By.cssSelector: [value='Log In']'
+15/08/2022 21:40:35 TestLogger ****************************************************************************************
+15/08/2022 21:40:35 TestLogger ********** End of Test Case: TC_003_VerifyLoginSuccessful  **********
+15/08/2022 21:40:35 TestLogger ****************************************************************************************
+15/08/2022 21:40:36 TestLogger Launching Chrome Browser...
+15/08/2022 21:40:55 TestLogger Launching Chrome Browser...
+15/08/2022 21:41:07 TestLogger ****************************************************************************************
+15/08/2022 21:41:07 TestLogger ********** Start of Test Case: TC_004_RegisterCustomerSuccessfully  **********
+15/08/2022 21:41:07 TestLogger ****************************************************************************************
+15/08/2022 21:41:13 TestLogger Clicked element: link text: Register]
+15/08/2022 21:41:13 TestLogger Entered text John in element css selector: [name='customer.firstName']]
+15/08/2022 21:41:13 TestLogger Entered text Doe in element css selector: [name='customer.lastName']]
+15/08/2022 21:41:13 TestLogger Entered text light street in element css selector: [name='customer.address.street']]
+15/08/2022 21:41:13 TestLogger Entered text Dallas in element css selector: [name='customer.address.city']]
+15/08/2022 21:41:14 TestLogger Entered text Texas in element css selector: [name='customer.address.state']]
+15/08/2022 21:41:14 TestLogger Entered text 5122 in element css selector: [name='customer.address.zipCode']]
+15/08/2022 21:41:14 TestLogger Entered text 0001 in element css selector: [name='customer.phoneNumber']]
+15/08/2022 21:41:14 TestLogger Entered text 4123-1233 in element css selector: [name='customer.ssn']]
+15/08/2022 21:41:14 TestLogger Entered text Buck in element css selector: [name='customer.username']]
+15/08/2022 21:41:14 TestLogger Entered text rain in element css selector: [name='customer.password']]
+15/08/2022 21:41:14 TestLogger Entered text rain in element css selector: [name='repeatedPassword']]
+15/08/2022 21:41:32 TestLogger Clicked element:Proxy element for: AjaxElementLocator 'By.cssSelector: [value='Register']'
+15/08/2022 21:41:42 TestLogger ****************************************************************************************
+15/08/2022 21:41:42 TestLogger ********** End of Test Case: TC_004_RegisterCustomerSuccessfully  **********
+15/08/2022 21:41:42 TestLogger ****************************************************************************************
+15/08/2022 21:50:12 TestLogger Launching Chrome Browser...
+15/08/2022 21:50:17 TestLogger Launching Chrome Browser...
+15/08/2022 22:11:21 TestLogger Launching Chrome Browser...
+15/08/2022 22:11:30 TestLogger Launching Chrome Browser...
+15/08/2022 22:11:30 TestLogger Launching Chrome Browser...
+15/08/2022 22:11:30 TestLogger Launching Chrome Browser...
+15/08/2022 22:11:33 TestLogger ****************************************************************************************
+15/08/2022 22:11:33 TestLogger ********** Start of Test Case: TC_001_VerifyEmptyCredentialFields  **********
+15/08/2022 22:11:33 TestLogger ****************************************************************************************
+15/08/2022 22:11:34 TestLogger ****************************************************************************************
+15/08/2022 22:11:34 TestLogger ********** Start of Test Case: TC_003_VerifyLoginSuccessful  **********
+15/08/2022 22:11:34 TestLogger ****************************************************************************************
+15/08/2022 22:11:34 TestLogger ****************************************************************************************
+15/08/2022 22:11:34 TestLogger ********** Start of Test Case: TC_002_VerifyIncorrectCredentials  **********
+15/08/2022 22:11:34 TestLogger ****************************************************************************************
+15/08/2022 22:11:34 TestLogger Entered text john in element css selector: [name='username']]
+15/08/2022 22:11:35 TestLogger Entered text Radwimps in element css selector: [name='username']]
+15/08/2022 22:11:35 TestLogger Entered text demo in element css selector: [name='password']]
+15/08/2022 22:11:35 TestLogger Entered text j)881-+jsAs in element css selector: [name='password']]
+15/08/2022 22:11:35 TestLogger Clicked element: css selector: [value='Log In']]
+15/08/2022 22:11:36 TestLogger ****************************************************************************************
+15/08/2022 22:11:36 TestLogger ********** End of Test Case: TC_001_VerifyEmptyCredentialFields  **********
+15/08/2022 22:11:36 TestLogger ****************************************************************************************
+15/08/2022 22:11:37 TestLogger Clicked element: css selector: [value='Log In']]
+15/08/2022 22:11:39 TestLogger ****************************************************************************************
+15/08/2022 22:11:39 TestLogger ********** End of Test Case: TC_002_VerifyIncorrectCredentials  **********
+15/08/2022 22:11:39 TestLogger ****************************************************************************************
+15/08/2022 22:11:48 TestLogger Clicked element:Proxy element for: AjaxElementLocator 'By.cssSelector: [value='Log In']'
+15/08/2022 22:11:59 TestLogger ****************************************************************************************
+15/08/2022 22:11:59 TestLogger ********** End of Test Case: TC_003_VerifyLoginSuccessful  **********
+15/08/2022 22:11:59 TestLogger ****************************************************************************************
+15/08/2022 22:12:00 TestLogger Launching Chrome Browser...
+15/08/2022 22:12:09 TestLogger Launching Chrome Browser...
+15/08/2022 22:12:13 TestLogger ****************************************************************************************
+15/08/2022 22:12:13 TestLogger ********** Start of Test Case: TC_004_RegisterCustomerSuccessfully  **********
+15/08/2022 22:12:13 TestLogger ****************************************************************************************
+15/08/2022 22:12:16 TestLogger Clicked element: link text: Register]
+15/08/2022 22:12:16 TestLogger Entered text John in element css selector: [name='customer.firstName']]
+15/08/2022 22:12:17 TestLogger Entered text Doe in element css selector: [name='customer.lastName']]
+15/08/2022 22:12:17 TestLogger Entered text light street in element css selector: [name='customer.address.street']]
+15/08/2022 22:12:17 TestLogger Entered text Dallas in element css selector: [name='customer.address.city']]
+15/08/2022 22:12:17 TestLogger Entered text Texas in element css selector: [name='customer.address.state']]
+15/08/2022 22:12:17 TestLogger Entered text 5122 in element css selector: [name='customer.address.zipCode']]
+15/08/2022 22:12:17 TestLogger Entered text 0001 in element css selector: [name='customer.phoneNumber']]
+15/08/2022 22:12:17 TestLogger Entered text 4123-1233 in element css selector: [name='customer.ssn']]
+15/08/2022 22:12:18 TestLogger Entered text Jeffry in element css selector: [name='customer.username']]
+15/08/2022 22:12:18 TestLogger Entered text rain in element css selector: [name='customer.password']]
+15/08/2022 22:12:18 TestLogger Entered text rain in element css selector: [name='repeatedPassword']]
+15/08/2022 22:12:34 TestLogger Clicked element:Proxy element for: AjaxElementLocator 'By.cssSelector: [value='Register']'
+15/08/2022 22:12:44 TestLogger ****************************************************************************************
+15/08/2022 22:12:44 TestLogger ********** End of Test Case: TC_004_RegisterCustomerSuccessfully  **********
+15/08/2022 22:12:44 TestLogger ****************************************************************************************
+15/08/2022 22:14:54 TestLogger Launching Chrome Browser...
+15/08/2022 22:15:00 TestLogger Launching Chrome Browser...
+15/08/2022 22:15:04 TestLogger ****************************************************************************************
+15/08/2022 22:15:04 TestLogger ********** Start of Test Case: TC_010_OpenNewAccountSuccessfully  **********
+15/08/2022 22:15:04 TestLogger ****************************************************************************************
+15/08/2022 22:15:04 TestLogger Entered text john in element css selector: [name='username']]
+15/08/2022 22:15:04 TestLogger Entered text demo in element css selector: [name='password']]
+15/08/2022 22:15:17 TestLogger Clicked element:Proxy element for: AjaxElementLocator 'By.cssSelector: [value='Log In']'
+15/08/2022 22:15:29 TestLogger Clicked element: link text: Open New Account]
+15/08/2022 22:15:31 TestLogger Clicked element: css selector: [value='Open New Account']]
+15/08/2022 22:15:53 TestLogger Launching Chrome Browser...
+15/08/2022 22:15:59 TestLogger Launching Chrome Browser...
+15/08/2022 22:16:00 TestLogger Launching Chrome Browser...
+15/08/2022 22:16:00 TestLogger Launching Chrome Browser...
+15/08/2022 22:16:03 TestLogger ****************************************************************************************
+15/08/2022 22:16:03 TestLogger ********** Start of Test Case: TC_002_VerifyIncorrectCredentials  **********
+15/08/2022 22:16:03 TestLogger ****************************************************************************************
+15/08/2022 22:16:04 TestLogger Entered text Radwimps in element css selector: [name='username']]
+15/08/2022 22:16:04 TestLogger ****************************************************************************************
+15/08/2022 22:16:04 TestLogger ********** Start of Test Case: TC_001_VerifyEmptyCredentialFields  **********
+15/08/2022 22:16:04 TestLogger ****************************************************************************************
+15/08/2022 22:16:04 TestLogger Entered text j)881-+jsAs in element css selector: [name='password']]
+15/08/2022 22:16:04 TestLogger ****************************************************************************************
+15/08/2022 22:16:04 TestLogger ********** Start of Test Case: TC_003_VerifyLoginSuccessful  **********
+15/08/2022 22:16:04 TestLogger ****************************************************************************************
+15/08/2022 22:16:05 TestLogger Entered text john in element css selector: [name='username']]
+15/08/2022 22:16:05 TestLogger Entered text demo in element css selector: [name='password']]
+15/08/2022 22:16:06 TestLogger Clicked element: css selector: [value='Log In']]
+15/08/2022 22:16:06 TestLogger Clicked element: css selector: [value='Log In']]
+15/08/2022 22:16:07 TestLogger ****************************************************************************************
+15/08/2022 22:16:07 TestLogger ********** End of Test Case: TC_001_VerifyEmptyCredentialFields  **********
+15/08/2022 22:16:07 TestLogger ****************************************************************************************
+15/08/2022 22:16:08 TestLogger ****************************************************************************************
+15/08/2022 22:16:08 TestLogger ********** End of Test Case: TC_002_VerifyIncorrectCredentials  **********
+15/08/2022 22:16:08 TestLogger ****************************************************************************************
+15/08/2022 22:16:19 TestLogger Clicked element:Proxy element for: AjaxElementLocator 'By.cssSelector: [value='Log In']'
+15/08/2022 22:16:29 TestLogger ****************************************************************************************
+15/08/2022 22:16:29 TestLogger ********** End of Test Case: TC_003_VerifyLoginSuccessful  **********
+15/08/2022 22:16:29 TestLogger ****************************************************************************************
+15/08/2022 22:16:31 TestLogger Launching Chrome Browser...
+15/08/2022 22:16:36 TestLogger Launching Chrome Browser...
+15/08/2022 22:16:41 TestLogger ****************************************************************************************
+15/08/2022 22:16:41 TestLogger ********** Start of Test Case: TC_004_RegisterCustomerSuccessfully  **********
+15/08/2022 22:16:41 TestLogger ****************************************************************************************
+15/08/2022 22:16:44 TestLogger Clicked element: link text: Register]
+15/08/2022 22:16:44 TestLogger Entered text John in element css selector: [name='customer.firstName']]
+15/08/2022 22:16:44 TestLogger Entered text Doe in element css selector: [name='customer.lastName']]
+15/08/2022 22:16:45 TestLogger Entered text light street in element css selector: [name='customer.address.street']]
+15/08/2022 22:16:45 TestLogger Entered text Dallas in element css selector: [name='customer.address.city']]
+15/08/2022 22:16:45 TestLogger Entered text Texas in element css selector: [name='customer.address.state']]
+15/08/2022 22:16:45 TestLogger Entered text 5122 in element css selector: [name='customer.address.zipCode']]
+15/08/2022 22:16:45 TestLogger Entered text 0001 in element css selector: [name='customer.phoneNumber']]
+15/08/2022 22:16:46 TestLogger Entered text 4123-1233 in element css selector: [name='customer.ssn']]
+15/08/2022 22:16:46 TestLogger Entered text Kerry in element css selector: [name='customer.username']]
+15/08/2022 22:16:46 TestLogger Entered text rain in element css selector: [name='customer.password']]
+15/08/2022 22:16:47 TestLogger Entered text rain in element css selector: [name='repeatedPassword']]
+15/08/2022 22:17:02 TestLogger Clicked element:Proxy element for: AjaxElementLocator 'By.cssSelector: [value='Register']'
+15/08/2022 22:17:12 TestLogger ****************************************************************************************
+15/08/2022 22:17:12 TestLogger ********** End of Test Case: TC_004_RegisterCustomerSuccessfully  **********
+15/08/2022 22:17:12 TestLogger ****************************************************************************************

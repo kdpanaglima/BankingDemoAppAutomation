@@ -21,9 +21,9 @@ import com.parasoft.banking.utilities.MonitoringMail;
 import com.parasoft.banking.utilities.TestConfig;
 import com.parasoft.banking.utilities.Utilities;
 
-public class CustomListeners extends BasePage implements ITestListener,ISuiteListener {
+public class CustomListeners extends Utilities implements ITestListener,ISuiteListener {
 
-	public 	String messageBody;
+	public String messageBody;
 	public void onFinish(ITestContext arg0) {
 		// TODO Auto-generated method stub
 		
@@ -43,21 +43,21 @@ public class CustomListeners extends BasePage implements ITestListener,ISuiteLis
 
 		System.setProperty("org.uncommons.reportng.escape-output","false");
 		try {
-			Utilities.captureScreenshot();
+			captureScreenshot();
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 		test.log(LogStatus.FAIL, arg0.getName().toUpperCase()+" Failed with exception : "+arg0.getThrowable());
-		test.log(LogStatus.INFO, test.addScreenCapture(Utilities.screenshotName));
+		test.log(LogStatus.INFO, test.addScreenCapture(screenshotName));
 		
 		
 		
 		Reporter.log("Click to see Screenshot");
-		Reporter.log("<a target=\"_blank\" href="+Utilities.screenshotName+">Screenshot</a>");
+		Reporter.log("<a target=\"_blank\" href="+screenshotName+">Screenshot</a>");
 		Reporter.log("<br>");
 		Reporter.log("<br>");
-		Reporter.log("<a target=\"_blank\" href="+Utilities.screenshotName+"><img src="+Utilities.screenshotName+" height=200 width=200></img></a>");
+		Reporter.log("<a target=\"_blank\" href="+screenshotName+"><img src="+screenshotName+" height=200 width=200></img></a>");
 		rep.endTest(test);
 		rep.flush();
 		

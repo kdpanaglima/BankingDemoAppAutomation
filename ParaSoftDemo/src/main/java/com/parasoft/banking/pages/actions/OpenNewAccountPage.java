@@ -15,7 +15,7 @@ public class OpenNewAccountPage extends BasePage {
 	public OpenNewAccountPage() {
 
 		this.openNewAccountLocators = new OpenNewAccountPageLocators();
-		AjaxElementLocatorFactory factory = new AjaxElementLocatorFactory(driver, 10);
+		AjaxElementLocatorFactory factory = new AjaxElementLocatorFactory(getDriver(), 10);
 		PageFactory.initElements(factory, this.openNewAccountLocators);
 
 	}

@@ -3,16 +3,15 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.parasoft.banking.testcases.VerifyCustomerLogin">
+      <class name="com.parasoft.banking.testcases.OpenAccount">
         <methods>
-          <include name="startingTestCase"/>
-          <include name="TC_003_VerifyLoginSuccessful"/>
-          <include name="TC_001_VerifyEmptyCredentialFields"/>
-          <include name="tearDown"/>
-          <include name="TC_002_VerifyIncorrectCredentials"/>
+          <include name="TC_010_OpenNewAccountSuccessfully"/>
           <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="endingTestCase"/>
+          <include name="startingTestCase"/>
         </methods>
-      </class> <!-- com.parasoft.banking.testcases.VerifyCustomerLogin -->
+      </class> <!-- com.parasoft.banking.testcases.OpenAccount -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

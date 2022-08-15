@@ -8,6 +8,7 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeTest;
+import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 import com.parasoft.banking.base.BasePage;
@@ -18,11 +19,11 @@ import com.parasoft.banking.pages.actions.CustomerLogin;
 import com.parasoft.banking.utilities.Utilities;
 import com.relevantcodes.extentreports.LogStatus;
 
-public class VerifyCustomerLogin {
+public class VerifyCustomerLogin extends BasePage{
 	
 	@BeforeTest
 	public void setUp() {
-		BasePage.initConfiguration();
+		initConfiguration();
 	}
 	
 	@BeforeMethod
@@ -42,20 +43,21 @@ public class VerifyCustomerLogin {
 	
 	@AfterTest
 	public void tearDown(){
-		if(BasePage.driver!=null){
-			BasePage.quitBrowser();
+		if(getDriver()!=null){
+			quitBrowser();
 		}
 	}
 	
-	@Test(priority=1)
+	@DataProvider(parallel = true)
+	@Test
 	public void TC_001_VerifyEmptyCredentialFields() {
 		CustomerLogin customerLogin = new CustomerLogin();
 		customerLogin.clickLogin();
 		ErrorCollector.verifyEquals(customerLogin.getLoginErrorMsg(), "Please enter a username and password.");
 		
 	}
-	
-	@Test(priority=2)
+	@DataProvider(parallel = true)
+	@Test
 	public void TC_002_VerifyIncorrectCredentials() {
 		CustomerLogin customerLogin = new CustomerLogin();
 		customerLogin.enterUsername("Radwimps");
@@ -65,15 +67,15 @@ public class VerifyCustomerLogin {
 		
 		
 	}
-	
-	@Test(priority=3)
+	@DataProvider(parallel = true)
+	@Test
 	public void TC_003_VerifyLoginSuccessful() {
 		CustomerLogin login = new CustomerLogin();
 		login.enterUsername(Constants.parasoftUser);
 		login.enterPassword(Constants.parasoftPass);
 		login.clickLogin();
 //		AccountsOverviewPage accountsOverview = new AccountsOverviewPage();
-		ErrorCollector.verifyEquals(BasePage.getPageTitle(), "ParaBank | Accounts Overview");
+		ErrorCollector.verifyEquals(getPageTitle(), "ParaBank | Accounts Overview");
 		
 	}
 	

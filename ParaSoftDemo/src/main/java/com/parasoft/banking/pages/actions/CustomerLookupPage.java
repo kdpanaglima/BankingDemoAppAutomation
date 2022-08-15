@@ -13,7 +13,7 @@ public class CustomerLookupPage extends BasePage{
 	public CustomerLookupPage() {
 
 		this.customerLookup = new CustomerLookupPageLocators();
-		AjaxElementLocatorFactory factory = new AjaxElementLocatorFactory(driver, 10);
+		AjaxElementLocatorFactory factory = new AjaxElementLocatorFactory(getDriver(), 10);
 		PageFactory.initElements(factory, this.customerLookup);
 
 	}

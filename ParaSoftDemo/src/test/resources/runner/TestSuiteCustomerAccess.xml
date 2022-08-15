@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Customer Access Scenarios">
+<suite name="Customer Access Scenarios" parallel="methods" thread-count="5">
 
 	<listeners>
 
@@ -12,19 +12,19 @@
 
 	</listeners>
 
-	<test name="Customer Login">
+	<test name="Customer Login" parallel="methods">
 		<classes>
 			<class name="com.parasoft.banking.testcases.VerifyCustomerLogin" />
 
 		</classes>
 	</test>
 
-	<test name="Customer Registration">
+	 <test name="Customer Registration" parallel="methods">
 		<classes>
 			<class name="com.parasoft.banking.testcases.VerifyCustomerRegistration" />
 
 		</classes>
-	</test>
+	</test> 
 
 
 </suite> <!-- Suite -->

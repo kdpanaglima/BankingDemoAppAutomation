@@ -13,7 +13,7 @@ public class AccountsOverviewPage extends BasePage{
 	public AccountsOverviewPage() {
 
 		this.accountsOverview = new AccountsOverviewPageLocators();
-		AjaxElementLocatorFactory factory = new AjaxElementLocatorFactory(driver, 10);
+		AjaxElementLocatorFactory factory = new AjaxElementLocatorFactory(getDriver(), 10);
 		PageFactory.initElements(factory, this.accountsOverview);
 
 	}

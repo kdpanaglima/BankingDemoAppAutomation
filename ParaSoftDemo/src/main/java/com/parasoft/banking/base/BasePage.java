@@ -1,6 +1,7 @@
 package com.parasoft.banking.base;
 
 import java.lang.reflect.Method;
+import java.sql.DriverManager;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -19,6 +20,7 @@ import org.testng.annotations.BeforeMethod;
 import com.relevantcodes.extentreports.ExtentReports;
 import com.relevantcodes.extentreports.ExtentTest;
 import com.relevantcodes.extentreports.LogStatus;
+
 import com.gargoylesoftware.htmlunit.util.StringUtils;
 import com.github.javafaker.Faker;
 import com.parasoft.banking.base.Constants;
@@ -41,74 +43,88 @@ public class BasePage {
 	 * 
 	 * 
 	 */
-	public static WebDriver driver;
+
 	public static Logger log = Logger.getLogger("TestLogger");
-	public static ExcelReader excel = new ExcelReader(
+	public  ExcelReader excel = new ExcelReader(
 			System.getProperty("user.dir") + "\\src\\test\\resources\\excel\\testdata.xlsx");
-	public static WebDriverWait wait;
-	public ExtentReports rep = ExtentManager.getInstance();
+	public  WebDriverWait wait;
+	public static ExtentReports rep = ExtentManager.getInstance();
 	public static ExtentTest test;
-	public static Faker faker;
-	public static String browser;
-	public static TopNavigation topNav;
-	public static CustomerLogin customerLogin;
-	public static AccountServicesNavigation accountServicesNav;
+	public  Faker faker;
+	public  String browser;
+	public  TopNavigation topNav;
+	public  CustomerLogin customerLogin;
+	public  AccountServicesNavigation accountServicesNav;
+	
+	private static ThreadLocal<WebDriver> driver = new ThreadLocal<>();
+
+	
 	
 	@BeforeMethod
-	public static void initConfiguration(){
+	public void initConfiguration(){
 		
-		if(Constants.browser.equals("firefox")){
+//		if(Constants.browser.equals("firefox")){
+//			
+//			driver = new FirefoxDriver();
+//			logDebugMessage("Launching Firefox Browser...");
+//		}else 
+		if(Constants.browser.equals("chrome")){
+			setDriver(new com.parasoft.banking.base.DriverManager().initializeDriver());
 			
-			driver = new FirefoxDriver();
-			logDebugMessage("Launching Firefox Browser...");
-		}else if(Constants.browser.equals("chrome")){
-			
-			System.setProperty("webdriver.chrome.driver",
-					System.getProperty("user.dir") + "\\src\\test\\resources\\executables\\chromedriver.exe");
-
-			Map<String, Object> prefs = new HashMap<String, Object>();
-			prefs.put("profile.default_content_setting_values.notifications", 2);
-			prefs.put("credentials_enable_service", false);
-			prefs.put("profile.password_manager_enabled", false);
-			ChromeOptions options = new ChromeOptions();
-			options.setExperimentalOption("prefs", prefs);
-			options.addArguments("--disable-extensions");
-			options.addArguments("--disable-infobars");
-
-			driver = new ChromeDriver(options);
+//			System.setProperty("webdriver.chrome.driver",
+//					System.getProperty("user.dir") + "\\src\\test\\resources\\executables\\chromedriver.exe");
+//
+//			Map<String, Object> prefs = new HashMap<String, Object>();
+//			prefs.put("profile.default_content_setting_values.notifications", 2);
+//			prefs.put("credentials_enable_service", false);
+//			prefs.put("profile.password_manager_enabled", false);
+//			ChromeOptions options = new ChromeOptions();
+//			options.setExperimentalOption("prefs", prefs);
+//			options.addArguments("--disable-extensions");
+//			options.addArguments("--disable-infobars");
+//
+//			driver = new ChromeDriver(options);
 			logDebugMessage("Launching Chrome Browser...");
-		}else if(Constants.browser.equals("ie")){
-			
-			System.setProperty("webdriver.ie.driver",
-					System.getProperty("user.dir") + "\\src\\test\\resources\\executables\\IEDriverServer.exe");
-			
-			driver = new InternetExplorerDriver();
-			logDebugMessage("Launching IE Browser...");
-		}else if(Constants.browser.equals("edge")){
-			
-			System.setProperty("webdriver.edge.driver",
-					System.getProperty("user.dir") + "\\src\\test\\resources\\executables\\msedgedriver.exe");
-
-			Map<String, Object> prefs = new HashMap<String, Object>();
-			prefs.put("profile.default_content_setting_values.notifications", 2);
-			prefs.put("credentials_enable_service", false);
-			prefs.put("profile.password_manager_enabled", false);
-			EdgeOptions options = new EdgeOptions();
-
-			driver = new EdgeDriver(options);
-			logDebugMessage("Launching Edge Browser...");
-		}
+//		}else if(Constants.browser.equals("ie")){
+//			
+//			System.setProperty("webdriver.ie.driver",
+//					System.getProperty("user.dir") + "\\src\\test\\resources\\executables\\IEDriverServer.exe");
+//			
+//			driver = new InternetExplorerDriver();
+//			logDebugMessage("Launching IE Browser...");
+//		}else if(Constants.browser.equals("edge")){
+//			
+//			System.setProperty("webdriver.edge.driver",
+//					System.getProperty("user.dir") + "\\src\\test\\resources\\executables\\msedgedriver.exe");
+//
+//			Map<String, Object> prefs = new HashMap<String, Object>();
+//			prefs.put("profile.default_content_setting_values.notifications", 2);
+//			prefs.put("credentials_enable_service", false);
+//			prefs.put("profile.password_manager_enabled", false);
+//			EdgeOptions options = new EdgeOptions();
+//
+//			driver = new EdgeDriver(options);
+//			logDebugMessage("Launching Edge Browser...");
+//		}
 		
-		driver.get(Constants.testsiteurl);
-		driver.manage().window().maximize();
+		getDriver().get(Constants.testsiteurl);
+//		driver.manage().window().maximize();
 		faker = new Faker();
 	/*	driver.manage().timeouts().implicitlyWait(Constants.implicitwait, TimeUnit.SECONDS);
 		wait = new WebDriverWait()*/
-		topNav = new TopNavigation(driver);
-		customerLogin = new CustomerLogin(driver);
-		accountServicesNav = new AccountServicesNavigation(driver);
+		topNav = new TopNavigation(getDriver());
+		customerLogin = new CustomerLogin(getDriver());
+		accountServicesNav = new AccountServicesNavigation(getDriver());
+	}
 	}
 	
+	public synchronized static void setDriver(WebDriver driverRef) {
+		driver.set(driverRef);
+	}
+	
+	public static WebDriver getDriver() {
+		return driver.get();
+	}
 	
 	public static void click(WebElement element) {
 
@@ -128,15 +144,15 @@ public class BasePage {
 
 	}
 	
-	public static String getPageTitle() {
-		return driver.getTitle();
+	public  String getPageTitle() {
+		return getDriver().getTitle();
 	}
 
 	
-	public static void quitBrowser(){
+	public synchronized void quitBrowser(){
 	
-		driver.close();
-		driver.quit();
+	
+		getDriver().quit();
 	}
 	
 	/**

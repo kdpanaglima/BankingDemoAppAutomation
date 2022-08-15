@@ -8,6 +8,7 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeTest;
+import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 import com.parasoft.banking.base.BasePage;
@@ -17,11 +18,11 @@ import com.parasoft.banking.pages.actions.RegistrationPage;
 import com.parasoft.banking.utilities.Utilities;
 import com.relevantcodes.extentreports.LogStatus;
 
-public class VerifyCustomerRegistration {
+public class VerifyCustomerRegistration extends BasePage{
 	
 	@BeforeTest
 	public void setUp() {
-		BasePage.initConfiguration();
+		initConfiguration();
 	}
 	
 	@BeforeMethod
@@ -41,15 +42,15 @@ public class VerifyCustomerRegistration {
 	
 	@AfterTest
 	public void tearDown(){
-		if(BasePage.driver!=null){
-			BasePage.quitBrowser();
+		if(getDriver()!=null){
+			quitBrowser();
 		}
 	}
-
-	@Test(priority = 1)
+	@DataProvider(parallel = true)
+	@Test
 	public void TC_004_RegisterCustomerSuccessfully() {
 
-		RegistrationPage registration = BasePage.customerLogin.clickRegister();
+		RegistrationPage registration = customerLogin.clickRegister();
 		registration.enterFirstName("John");
 		registration.enterLastName("Doe");
 		registration.enterAddressStreet("light street");
@@ -58,7 +59,7 @@ public class VerifyCustomerRegistration {
 		registration.enterZipCode("5122");
 		registration.enterPhone("0001");
 		registration.enterSSN("4123-1233");
-		registration.enterUsername(BasePage.faker.name().firstName().toString());
+		registration.enterUsername(faker.name().firstName().toString());
 		registration.enterPassword("rain");
 		registration.enterConfirmPassword("rain");
 		registration.clickRegister();
@@ -71,7 +72,7 @@ public class VerifyCustomerRegistration {
 
 	public void TC_005_VerifyUsernameFieldExists() {
 
-		RegistrationPage registration = BasePage.customerLogin.clickRegister();
+		RegistrationPage registration = customerLogin.clickRegister();
 		registration.enterFirstName("John");
 		registration.enterLastName("Doe");
 		registration.enterAddressStreet("light street");

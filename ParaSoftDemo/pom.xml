@@ -3,10 +3,10 @@
 	<groupId>com.parasoft.banking</groupId>
 	<artifactId>ParaSoftDemo</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	
+
 	<properties>
-     <maven.compiler.source>1.8</maven.compiler.source>
-     <maven.compiler.target>1.8</maven.compiler.target>
+		<maven.compiler.source>1.8</maven.compiler.source>
+		<maven.compiler.target>1.8</maven.compiler.target>
 	</properties>
 
 	<dependencies>
@@ -114,6 +114,13 @@
 			<version>1.0.2</version>
 		</dependency>
 
+		<!-- https://mvnrepository.com/artifact/io.github.bonigarcia/webdrivermanager -->
+		<dependency>
+			<groupId>io.github.bonigarcia</groupId>
+			<artifactId>webdrivermanager</artifactId>
+			<version>5.2.3</version>
+		</dependency>
+
 	</dependencies>
 
 	<build>
@@ -124,8 +131,9 @@
 				<artifactId>maven-surefire-plugin</artifactId>
 				<version>2.18.1</version>
 				<configuration>
+					<threadCount>5</threadCount>
 					<testFailureIgnore> false </testFailureIgnore>
-				 	<suiteXmlFiles>
+					<suiteXmlFiles>
 						<suiteXmlFile>src/test/resources/runner/${TEST_SUITE}</suiteXmlFile>
 
 					</suiteXmlFiles>

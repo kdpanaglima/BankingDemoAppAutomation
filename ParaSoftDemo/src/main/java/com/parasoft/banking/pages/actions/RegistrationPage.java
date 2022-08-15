@@ -13,7 +13,7 @@ public class RegistrationPage extends BasePage{
 	public RegistrationPage() {
 
 		this.registration = new RegistrationPageLocators();
-		AjaxElementLocatorFactory factory = new AjaxElementLocatorFactory(driver, 10);
+		AjaxElementLocatorFactory factory = new AjaxElementLocatorFactory(getDriver(), 10);
 		PageFactory.initElements(factory, this.registration);
 
 	}

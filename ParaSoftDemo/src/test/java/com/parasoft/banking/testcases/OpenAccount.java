@@ -13,11 +13,11 @@ import com.parasoft.banking.errorcollectors.ErrorCollector;
 import com.parasoft.banking.pages.actions.CustomerLogin;
 import com.parasoft.banking.pages.actions.OpenNewAccountPage;
 
-public class OpenAccount{
+public class OpenAccount extends BasePage{
 	
 	@BeforeTest
 	public void setUp() {
-		BasePage.initConfiguration();
+		initConfiguration();
 	}
 	
 	@BeforeMethod
@@ -37,8 +37,8 @@ public class OpenAccount{
 	
 	@AfterTest
 	public void tearDown(){
-		if(BasePage.driver!=null){
-			BasePage.quitBrowser();
+		if(getDriver()!=null){
+			quitBrowser();
 		}
 	}
 	
@@ -49,7 +49,7 @@ public class OpenAccount{
 		login.enterPassword(Constants.parasoftPass);
 		login.clickLogin();
 	
-		OpenNewAccountPage openNewAccount = BasePage.accountServicesNav.clickOpenNewAccountLink();
+		OpenNewAccountPage openNewAccount = accountServicesNav.clickOpenNewAccountLink();
 		openNewAccount.seletAccountType("SAVINGS");
 		openNewAccount.seletAccountNum();
 		/**

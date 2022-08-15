@@ -14,7 +14,7 @@ public class CustomerLogin extends BasePage{
 	public CustomerLogin(WebDriver driver) {
 
 		this.customerLogin = new CustomerLoginLocators();
-		AjaxElementLocatorFactory factory = new AjaxElementLocatorFactory(driver, 10);
+		AjaxElementLocatorFactory factory = new AjaxElementLocatorFactory(getDriver(), 10);
 		PageFactory.initElements(factory, this.customerLogin);
 
 	}
@@ -22,7 +22,7 @@ public class CustomerLogin extends BasePage{
 	public CustomerLogin() {
 
 		this.customerLogin = new CustomerLoginLocators();
-		AjaxElementLocatorFactory factory = new AjaxElementLocatorFactory(driver, 10);
+		AjaxElementLocatorFactory factory = new AjaxElementLocatorFactory(getDriver(), 10);
 		PageFactory.initElements(factory, this.customerLogin);
 
 	}

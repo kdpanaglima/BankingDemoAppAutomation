@@ -16,12 +16,12 @@ import com.parasoft.banking.base.BasePage;
 
 public class Utilities extends BasePage {
 
-	public static String screenshotPath;
-	public static String screenshotName;
+	public String screenshotPath;
+	public String screenshotName;
 
-	public static void captureScreenshot() throws IOException {
+	public void captureScreenshot() throws IOException {
 
-		File scrFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
+		File scrFile = ((TakesScreenshot) getDriver()).getScreenshotAs(OutputType.FILE);
 
 		Date d = new Date();
 		screenshotName = d.toString().replace(":", "_").replace(" ", "_") + ".jpg";
