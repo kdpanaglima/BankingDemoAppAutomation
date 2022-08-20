@@ -24,7 +24,7 @@ ExtentReports library is integrated with Jenkins, test reports for the last exec
 - [x] Add base objects
 - [x] Add first test case
 - [x] Integrate with Jenkins
-- [ ] Implement parallelism 
+- [ ] Implement parallelization
 - [ ] Review modularity 
 - [ ] Singleton design pattern and webdriver manager
 - [ ] Add more test cases
