@@ -12,7 +12,7 @@
 <body>
 <h1>Customer Login</h1>
 <p>
-  Test duration: 57.149s
+  Test duration: 218.322s
 </p>
 
   <table class="resultsTable configTable">
@@ -23,28 +23,36 @@
             
 <tr>
   <td class="method">
-                  tearDown
+                  initConfiguration
       </td>
   <td class="duration">
-    0.216s
+    54.027s
   </td>
   <td class="result">
         
     
         
 
-        <a href="javascript:toggleElement('exception-0', 'block')" title="Click to expand/collapse"><b>org.openqa.selenium.remote.UnreachableBrowserException: Error communicating with the remote browser. It may have died.<br/>
+        <a href="javascript:toggleElement('exception-0', 'block')" title="Click to expand/collapse"><b>org.openqa.selenium.WebDriverException: unknown error: net::ERR_NAME_NOT_RESOLVED<br/>
+&nbsp; (Session info: chrome=104.0.5112.101)<br/>
+&nbsp; (Driver info: chromedriver=104.0.5112.79 (3cf3e8c8a07d104b9e1260c910efb8f383285dc5-refs/branch-heads/5112@{#1307}),platform=Windows NT 10.0.22621 x86_64) (WARNING: The server did not provide any stacktrace information)<br/>
+Command duration or timeout: 37.43 seconds<br/>
 Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1cd5757287168e54b817830adce9b0158d&apos;, time: &apos;2016-06-30 19:26:09&apos;<br/>
 System info: host: &apos;KEVINP0D37&apos;, ip: &apos;10.211.55.4&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.2&apos;<br/>
-Driver info: driver.version: RemoteWebDriver<br/>
-Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:55138}, webauthn:extension:credBlob=true, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, webauthn:extension:largeBlob=true, unexpectedAlertBehaviour=ignore, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=104.0.5112.79 (3cf3e8c8a07d104b9e1260c910efb8f383285dc5-refs/branch-heads/5112@{#1307}), userDataDir=C:\Users\kevinp\AppData\Local\Temp\scoped_dir14552_1180026492}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, databaseEnabled=false, handlesAlerts=true, version=104.0.5112.81, browserConnectionEnabled=false, proxy={}, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true, webauthn:virtualAuthenticators=true}]<br/>
-Session ID: 0a39ea1ccd8446bfdadd972d594ed233</b></a><br />
+Driver info: org.openqa.selenium.chrome.ChromeDriver<br/>
+Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:64362}, webauthn:extension:credBlob=true, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, webauthn:extension:largeBlob=true, unexpectedAlertBehaviour=ignore, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=104.0.5112.79 (3cf3e8c8a07d104b9e1260c910efb8f383285dc5-refs/branch-heads/5112@{#1307}), userDataDir=C:\Users\kevinp\AppData\Local\Temp\scoped_dir5244_171729417}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, databaseEnabled=false, handlesAlerts=true, version=104.0.5112.101, browserConnectionEnabled=false, proxy={}, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true, webauthn:virtualAuthenticators=true}]<br/>
+Session ID: c940941d3bc6852b79f341e9e5f81b1a</b></a><br />
     <div class="stackTrace" id="exception-0">
-              org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:665)<br />
-              org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:701)<br />
-              org.openqa.selenium.remote.RemoteWebDriver.quit(RemoteWebDriver.java:526)<br />
-              com.parasoft.banking.base.BasePage.quitBrowser(BasePage.java:155)<br />
-              com.parasoft.banking.testcases.VerifyCustomerLogin.tearDown(VerifyCustomerLogin.java:47)<br />
+              java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)<br />
+              java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)<br />
+              java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)<br />
+              java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)<br />
+              java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)<br />
+              org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)<br />
+              org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)<br />
+              org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)<br />
+              org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:316)<br />
+              com.parasoft.banking.base.BasePage.initConfiguration(BasePage.java:112)<br />
               java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
               java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)<br />
               java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br />
@@ -52,152 +60,7 @@ Session ID: 0a39ea1ccd8446bfdadd972d594ed233</b></a><br />
               org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)<br />
               org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:523)<br />
               org.testng.internal.Invoker.invokeConfigurations(Invoker.java:224)<br />
-              org.testng.internal.Invoker.invokeConfigurations(Invoker.java:146)<br />
-              org.testng.TestRunner.afterRun(TestRunner.java:958)<br />
-              org.testng.TestRunner.run(TestRunner.java:606)<br />
-              org.testng.SuiteRunner.runTest(SuiteRunner.java:380)<br />
-              org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)<br />
-              org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)<br />
-              org.testng.SuiteRunner.run(SuiteRunner.java:289)<br />
-              org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br />
-              org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)<br />
-              org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)<br />
-              org.testng.TestNG.runSuitesLocally(TestNG.java:1226)<br />
-              org.testng.TestNG.runSuites(TestNG.java:1144)<br />
-              org.testng.TestNG.run(TestNG.java:1115)<br />
-              org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)<br />
-              org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)<br />
-              org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)<br />
-                    <b>Caused by: </b> <a href="javascript:toggleElement('exception-1', 'block')" title="Click to expand/collapse">java.lang.RuntimeException: Process refused to die after 10 seconds, and couldn&apos;t taskkill it: Unable to make field private final long java.lang.ProcessImpl.handle accessible: module java.base does not &quot;opens java.lang&quot; to unnamed module @3cbbc1e0</a><br />
-        <div class="stackTrace" id="exception-1">
-                      org.openqa.selenium.os.ProcessUtils.killWinProcess(ProcessUtils.java:143)<br />
-                      org.openqa.selenium.os.ProcessUtils.killProcess(ProcessUtils.java:81)<br />
-                      org.openqa.selenium.os.UnixProcess$SeleniumWatchDog.destroyHarder(UnixProcess.java:247)<br />
-                      org.openqa.selenium.os.UnixProcess$SeleniumWatchDog.access$200(UnixProcess.java:201)<br />
-                      org.openqa.selenium.os.UnixProcess.destroy(UnixProcess.java:125)<br />
-                      org.openqa.selenium.os.CommandLine.destroy(CommandLine.java:155)<br />
-                      org.openqa.selenium.remote.service.DriverService.stop(DriverService.java:196)<br />
-                      org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:94)<br />
-                      org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:644)<br />
-                      org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:701)<br />
-                      org.openqa.selenium.remote.RemoteWebDriver.quit(RemoteWebDriver.java:526)<br />
-                      com.parasoft.banking.base.BasePage.quitBrowser(BasePage.java:155)<br />
-                      com.parasoft.banking.testcases.VerifyCustomerLogin.tearDown(VerifyCustomerLogin.java:47)<br />
-                      java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
-                      java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)<br />
-                      java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br />
-                      java.base/java.lang.reflect.Method.invoke(Method.java:568)<br />
-                      org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)<br />
-                      org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:523)<br />
-                      org.testng.internal.Invoker.invokeConfigurations(Invoker.java:224)<br />
-                      org.testng.internal.Invoker.invokeConfigurations(Invoker.java:146)<br />
-                      org.testng.TestRunner.afterRun(TestRunner.java:958)<br />
-                      org.testng.TestRunner.run(TestRunner.java:606)<br />
-                      org.testng.SuiteRunner.runTest(SuiteRunner.java:380)<br />
-                      org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)<br />
-                      org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)<br />
-                      org.testng.SuiteRunner.run(SuiteRunner.java:289)<br />
-                      org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br />
-                      org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)<br />
-                      org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)<br />
-                      org.testng.TestNG.runSuitesLocally(TestNG.java:1226)<br />
-                      org.testng.TestNG.runSuites(TestNG.java:1144)<br />
-                      org.testng.TestNG.run(TestNG.java:1115)<br />
-                      org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)<br />
-                      org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)<br />
-                      org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)<br />
-                  </div>
-              <b>Caused by: </b> <a href="javascript:toggleElement('exception-2', 'block')" title="Click to expand/collapse">java.lang.reflect.InaccessibleObjectException: Unable to make field private final long java.lang.ProcessImpl.handle accessible: module java.base does not &quot;opens java.lang&quot; to unnamed module @3cbbc1e0</a><br />
-        <div class="stackTrace" id="exception-2">
-                      java.base/java.lang.reflect.AccessibleObject.checkCanSetAccessible(AccessibleObject.java:354)<br />
-                      java.base/java.lang.reflect.AccessibleObject.checkCanSetAccessible(AccessibleObject.java:297)<br />
-                      java.base/java.lang.reflect.Field.checkCanSetAccessible(Field.java:178)<br />
-                      java.base/java.lang.reflect.Field.setAccessible(Field.java:172)<br />
-                      org.openqa.selenium.os.ProcessUtils.killWinProcess(ProcessUtils.java:130)<br />
-                      org.openqa.selenium.os.ProcessUtils.killProcess(ProcessUtils.java:81)<br />
-                      org.openqa.selenium.os.UnixProcess$SeleniumWatchDog.destroyHarder(UnixProcess.java:247)<br />
-                      org.openqa.selenium.os.UnixProcess$SeleniumWatchDog.access$200(UnixProcess.java:201)<br />
-                      org.openqa.selenium.os.UnixProcess.destroy(UnixProcess.java:125)<br />
-                      org.openqa.selenium.os.CommandLine.destroy(CommandLine.java:155)<br />
-                      org.openqa.selenium.remote.service.DriverService.stop(DriverService.java:196)<br />
-                      org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:94)<br />
-                      org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:644)<br />
-                      org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:701)<br />
-                      org.openqa.selenium.remote.RemoteWebDriver.quit(RemoteWebDriver.java:526)<br />
-                      com.parasoft.banking.base.BasePage.quitBrowser(BasePage.java:155)<br />
-                      com.parasoft.banking.testcases.VerifyCustomerLogin.tearDown(VerifyCustomerLogin.java:47)<br />
-                      java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
-                      java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)<br />
-                      java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br />
-                      java.base/java.lang.reflect.Method.invoke(Method.java:568)<br />
-                      org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)<br />
-                      org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:523)<br />
-                      org.testng.internal.Invoker.invokeConfigurations(Invoker.java:224)<br />
-                      org.testng.internal.Invoker.invokeConfigurations(Invoker.java:146)<br />
-                      org.testng.TestRunner.afterRun(TestRunner.java:958)<br />
-                      org.testng.TestRunner.run(TestRunner.java:606)<br />
-                      org.testng.SuiteRunner.runTest(SuiteRunner.java:380)<br />
-                      org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)<br />
-                      org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)<br />
-                      org.testng.SuiteRunner.run(SuiteRunner.java:289)<br />
-                      org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br />
-                      org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)<br />
-                      org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)<br />
-                      org.testng.TestNG.runSuitesLocally(TestNG.java:1226)<br />
-                      org.testng.TestNG.runSuites(TestNG.java:1144)<br />
-                      org.testng.TestNG.run(TestNG.java:1115)<br />
-                      org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)<br />
-                      org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)<br />
-                      org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)<br />
-                  </div>
-          </div>
-      </td>
-</tr>
-    
-      </table>
-
-
-  <table class="resultsTable">
-    <tr><th colspan="3" class="header failed">Failed Tests</th></tr>
-          <tr>
-        <td colspan="3" class="group">com.parasoft.banking.testcases.VerifyCustomerLogin</td>
-      </tr>
-            
-<tr>
-  <td class="method">
-                  TC_002_VerifyIncorrectCredentials
-      </td>
-  <td class="duration">
-    2.264s
-  </td>
-  <td class="result">
-        
-    
-            <div class="testOutput">
-                        Click to see Screenshot
-                                <a target="_blank" href=Mon_Aug_15_22_16_07_IRKT_2022.jpg>Screenshot</a>
-                                <br>
-                                <br>
-                                <a target="_blank" href=Mon_Aug_15_22_16_07_IRKT_2022.jpg><img src=Mon_Aug_15_22_16_07_IRKT_2022.jpg height=200 width=200></img></a>
-                  </div>
-    
-
-        <a href="javascript:toggleElement('exception-3', 'block')" title="Click to expand/collapse"><b>java.lang.AssertionError: expected [The username and password could not be verified.] but found [An internal error has occurred and has been logged.]</b></a><br />
-    <div class="stackTrace" id="exception-3">
-              org.testng.Assert.fail(Assert.java:93)<br />
-              org.testng.Assert.failNotEquals(Assert.java:512)<br />
-              org.testng.Assert.assertEqualsImpl(Assert.java:134)<br />
-              org.testng.Assert.assertEquals(Assert.java:115)<br />
-              org.testng.Assert.assertEquals(Assert.java:178)<br />
-              com.parasoft.banking.errorcollectors.ErrorCollector.assertEquals(ErrorCollector.java:38)<br />
-              com.parasoft.banking.errorcollectors.ErrorCollector.verifyEquals(ErrorCollector.java:91)<br />
-              com.parasoft.banking.testcases.VerifyCustomerLogin.TC_002_VerifyIncorrectCredentials(VerifyCustomerLogin.java:66)<br />
-              java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
-              java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)<br />
-              java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br />
-              java.base/java.lang.reflect.Method.invoke(Method.java:568)<br />
-              org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)<br />
-              org.testng.internal.Invoker.invokeMethod(Invoker.java:661)<br />
+              org.testng.internal.Invoker.invokeMethod(Invoker.java:599)<br />
               org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)<br />
               org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)<br />
               org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)<br />
@@ -208,11 +71,279 @@ Session ID: 0a39ea1ccd8446bfdadd972d594ed233</b></a><br />
                 </div>
       </td>
 </tr>
-      </table>
+<tr>
+  <td class="method">
+                  initConfiguration
+      </td>
+  <td class="duration">
+    54.955s
+  </td>
+  <td class="result">
+        
+    
+        
+
+        <a href="javascript:toggleElement('exception-1', 'block')" title="Click to expand/collapse"><b>org.openqa.selenium.WebDriverException: unknown error: net::ERR_NAME_NOT_RESOLVED<br/>
+&nbsp; (Session info: chrome=104.0.5112.101)<br/>
+&nbsp; (Driver info: chromedriver=104.0.5112.79 (3cf3e8c8a07d104b9e1260c910efb8f383285dc5-refs/branch-heads/5112@{#1307}),platform=Windows NT 10.0.22621 x86_64) (WARNING: The server did not provide any stacktrace information)<br/>
+Command duration or timeout: 38.74 seconds<br/>
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1cd5757287168e54b817830adce9b0158d&apos;, time: &apos;2016-06-30 19:26:09&apos;<br/>
+System info: host: &apos;KEVINP0D37&apos;, ip: &apos;10.211.55.4&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.2&apos;<br/>
+Driver info: org.openqa.selenium.chrome.ChromeDriver<br/>
+Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:64361}, webauthn:extension:credBlob=true, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, webauthn:extension:largeBlob=true, unexpectedAlertBehaviour=ignore, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=104.0.5112.79 (3cf3e8c8a07d104b9e1260c910efb8f383285dc5-refs/branch-heads/5112@{#1307}), userDataDir=C:\Users\kevinp\AppData\Local\Temp\scoped_dir11032_1551029016}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, databaseEnabled=false, handlesAlerts=true, version=104.0.5112.101, browserConnectionEnabled=false, proxy={}, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true, webauthn:virtualAuthenticators=true}]<br/>
+Session ID: bf078a2226366baac90c9263cf5fc031</b></a><br />
+    <div class="stackTrace" id="exception-1">
+              java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)<br />
+              java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)<br />
+              java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)<br />
+              java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)<br />
+              java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)<br />
+              org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)<br />
+              org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)<br />
+              org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)<br />
+              org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:316)<br />
+              com.parasoft.banking.base.BasePage.initConfiguration(BasePage.java:112)<br />
+              java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
+              java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)<br />
+              java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br />
+              java.base/java.lang.reflect.Method.invoke(Method.java:568)<br />
+              org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)<br />
+              org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:523)<br />
+              org.testng.internal.Invoker.invokeConfigurations(Invoker.java:224)<br />
+              org.testng.internal.Invoker.invokeMethod(Invoker.java:599)<br />
+              org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)<br />
+              org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)<br />
+              org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)<br />
+              org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)<br />
+              java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)<br />
+              java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)<br />
+              java.base/java.lang.Thread.run(Thread.java:833)<br />
+                </div>
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  initConfiguration
+      </td>
+  <td class="duration">
+    54.333s
+  </td>
+  <td class="result">
+        
+    
+        
+
+        <a href="javascript:toggleElement('exception-2', 'block')" title="Click to expand/collapse"><b>org.openqa.selenium.WebDriverException: unknown error: net::ERR_NAME_NOT_RESOLVED<br/>
+&nbsp; (Session info: chrome=104.0.5112.101)<br/>
+&nbsp; (Driver info: chromedriver=104.0.5112.79 (3cf3e8c8a07d104b9e1260c910efb8f383285dc5-refs/branch-heads/5112@{#1307}),platform=Windows NT 10.0.22621 x86_64) (WARNING: The server did not provide any stacktrace information)<br/>
+Command duration or timeout: 38.08 seconds<br/>
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1cd5757287168e54b817830adce9b0158d&apos;, time: &apos;2016-06-30 19:26:09&apos;<br/>
+System info: host: &apos;KEVINP0D37&apos;, ip: &apos;10.211.55.4&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.2&apos;<br/>
+Driver info: org.openqa.selenium.chrome.ChromeDriver<br/>
+Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:64360}, webauthn:extension:credBlob=true, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, webauthn:extension:largeBlob=true, unexpectedAlertBehaviour=ignore, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=104.0.5112.79 (3cf3e8c8a07d104b9e1260c910efb8f383285dc5-refs/branch-heads/5112@{#1307}), userDataDir=C:\Users\kevinp\AppData\Local\Temp\scoped_dir12148_1368365596}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, databaseEnabled=false, handlesAlerts=true, version=104.0.5112.101, browserConnectionEnabled=false, proxy={}, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true, webauthn:virtualAuthenticators=true}]<br/>
+Session ID: 155d9cafa04767ee149866197b6aa5e6</b></a><br />
+    <div class="stackTrace" id="exception-2">
+              java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)<br />
+              java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)<br />
+              java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)<br />
+              java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)<br />
+              java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)<br />
+              org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)<br />
+              org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)<br />
+              org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)<br />
+              org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:316)<br />
+              com.parasoft.banking.base.BasePage.initConfiguration(BasePage.java:112)<br />
+              java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
+              java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)<br />
+              java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br />
+              java.base/java.lang.reflect.Method.invoke(Method.java:568)<br />
+              org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)<br />
+              org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:523)<br />
+              org.testng.internal.Invoker.invokeConfigurations(Invoker.java:224)<br />
+              org.testng.internal.Invoker.invokeMethod(Invoker.java:599)<br />
+              org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)<br />
+              org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)<br />
+              org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)<br />
+              org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)<br />
+              java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)<br />
+              java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)<br />
+              java.base/java.lang.Thread.run(Thread.java:833)<br />
+                </div>
+      </td>
+</tr>
+          <tr class="group">
+        <td colspan="3">com.parasoft.banking.testcases.VerifyCustomerRegistration</td>
+      </tr>
+            
+<tr>
+  <td class="method">
+                  initConfiguration
+      </td>
+  <td class="duration">
+    55.005s
+  </td>
+  <td class="result">
+        
+    
+        
+
+        <a href="javascript:toggleElement('exception-3', 'block')" title="Click to expand/collapse"><b>org.openqa.selenium.WebDriverException: unknown error: net::ERR_NAME_NOT_RESOLVED<br/>
+&nbsp; (Session info: chrome=104.0.5112.101)<br/>
+&nbsp; (Driver info: chromedriver=104.0.5112.79 (3cf3e8c8a07d104b9e1260c910efb8f383285dc5-refs/branch-heads/5112@{#1307}),platform=Windows NT 10.0.22621 x86_64) (WARNING: The server did not provide any stacktrace information)<br/>
+Command duration or timeout: 37.13 seconds<br/>
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1cd5757287168e54b817830adce9b0158d&apos;, time: &apos;2016-06-30 19:26:09&apos;<br/>
+System info: host: &apos;KEVINP0D37&apos;, ip: &apos;10.211.55.4&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.2&apos;<br/>
+Driver info: org.openqa.selenium.chrome.ChromeDriver<br/>
+Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:64359}, webauthn:extension:credBlob=true, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, webauthn:extension:largeBlob=true, unexpectedAlertBehaviour=ignore, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=104.0.5112.79 (3cf3e8c8a07d104b9e1260c910efb8f383285dc5-refs/branch-heads/5112@{#1307}), userDataDir=C:\Users\kevinp\AppData\Local\Temp\scoped_dir10548_1469019938}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, databaseEnabled=false, handlesAlerts=true, version=104.0.5112.101, browserConnectionEnabled=false, proxy={}, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true, webauthn:virtualAuthenticators=true}]<br/>
+Session ID: a3bcaec5c184545329d4629fecc66af2</b></a><br />
+    <div class="stackTrace" id="exception-3">
+              java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)<br />
+              java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)<br />
+              java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)<br />
+              java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)<br />
+              java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)<br />
+              org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)<br />
+              org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)<br />
+              org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)<br />
+              org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:316)<br />
+              com.parasoft.banking.base.BasePage.initConfiguration(BasePage.java:112)<br />
+              java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
+              java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)<br />
+              java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br />
+              java.base/java.lang.reflect.Method.invoke(Method.java:568)<br />
+              org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)<br />
+              org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:523)<br />
+              org.testng.internal.Invoker.invokeConfigurations(Invoker.java:224)<br />
+              org.testng.internal.Invoker.invokeMethod(Invoker.java:599)<br />
+              org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)<br />
+              org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)<br />
+              org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)<br />
+              org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)<br />
+              java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)<br />
+              java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)<br />
+              java.base/java.lang.Thread.run(Thread.java:833)<br />
+                </div>
+      </td>
+</tr>
+    
+          <tr><td colspan="3">&nbsp;</td></tr>
+      <tr><td colspan="3" class="header skippedConfig">Skipped Configuration</td></tr>
+                    <tr>
+          <td colspan="3" class="group">com.parasoft.banking.testcases.VerifyCustomerLogin</td>
+        </tr>
+                
+<tr>
+  <td class="method">
+                  quitBrowser
+      </td>
+  <td class="duration">
+    0.000s
+  </td>
+  <td class="result">
+                             <i>Depends on method(s): </i>
+        <span class="dependency">com.parasoft.banking.testcases.VerifyCustomerRegistration.tearDown, com.parasoft.banking.testcases.VerifyCustomerLogin.tearDown</span>
+                
+    
+        
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  startingTestCase
+      </td>
+  <td class="duration">
+    0.000s
+  </td>
+  <td class="result">
+                               
+    
+        
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  startingTestCase
+      </td>
+  <td class="duration">
+    0.000s
+  </td>
+  <td class="result">
+                               
+    
+        
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  startingTestCase
+      </td>
+  <td class="duration">
+    0.000s
+  </td>
+  <td class="result">
+                               
+    
+        
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  tearDown
+      </td>
+  <td class="duration">
+    0.000s
+  </td>
+  <td class="result">
+                             <i>Depends on method(s): </i>
+        <span class="dependency">com.parasoft.banking.testcases.VerifyCustomerLogin.tearDown</span>
+                
+    
+        
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  tearDown
+      </td>
+  <td class="duration">
+    0.000s
+  </td>
+  <td class="result">
+                               
+    
+        
+
+      </td>
+</tr>
+              <tr>
+          <td colspan="3" class="group">com.parasoft.banking.testcases.VerifyCustomerRegistration</td>
+        </tr>
+                
+<tr>
+  <td class="method">
+                  startingTestCase
+      </td>
+  <td class="duration">
+    0.000s
+  </td>
+  <td class="result">
+                               
+    
+        
+
+      </td>
+</tr>
+            </table>
 
 
-  <table class="resultsTable">
-    <tr><th colspan="3" class="header passed">Passed Tests</th></tr>
+
+  <table class="resultsTable" width="100%">
+    <tr><th colspan="3" class="header skipped">Skipped Tests</th></tr>
           <tr>
         <td colspan="3" class="group">com.parasoft.banking.testcases.VerifyCustomerLogin</td>
       </tr>
@@ -222,10 +353,24 @@ Session ID: 0a39ea1ccd8446bfdadd972d594ed233</b></a><br />
                   TC_001_VerifyEmptyCredentialFields
       </td>
   <td class="duration">
-    2.264s
+    0.000s
   </td>
   <td class="result">
+                               
+    
         
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  TC_002_VerifyIncorrectCredentials
+      </td>
+  <td class="duration">
+    0.000s
+  </td>
+  <td class="result">
+                               
     
         
 
@@ -236,16 +381,35 @@ Session ID: 0a39ea1ccd8446bfdadd972d594ed233</b></a><br />
                   TC_003_VerifyLoginSuccessful
       </td>
   <td class="duration">
-    24.855s
+    0.002s
   </td>
   <td class="result">
+                               
+    
         
+
+      </td>
+</tr>
+          <tr>
+        <td colspan="3" class="group">com.parasoft.banking.testcases.VerifyCustomerRegistration</td>
+      </tr>
+            
+<tr>
+  <td class="method">
+                  TC_004_RegisterCustomerSuccessfully
+      </td>
+  <td class="duration">
+    0.000s
+  </td>
+  <td class="result">
+                               
     
         
 
       </td>
 </tr>
       </table>
+
   
 </body>
 </html>

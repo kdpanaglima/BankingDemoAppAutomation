@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite parallel="methods" name="Failed suite [Customer Access Scenarios]" guice-stage="DEVELOPMENT">
+<suite thread-count="4" parallel="methods" name="Failed suite [Customer Access Scenarios]" guice-stage="DEVELOPMENT">
   <listeners>
     <listener class-name="com.parasoft.banking.listeners.CustomListeners"/>
     <listener class-name="com.parasoft.banking.errorcollectors.TestListenerAdapter"/>
@@ -13,12 +13,24 @@
         <methods>
           <include name="startingTestCase"/>
           <include name="initConfiguration"/>
+          <include name="TC_003_VerifyLoginSuccessful"/>
           <include name="endingTestCase"/>
+          <include name="TC_001_VerifyEmptyCredentialFields"/>
           <include name="tearDown"/>
           <include name="TC_002_VerifyIncorrectCredentials"/>
-          <include name="setUp"/>
+          <include name="quitBrowser"/>
         </methods>
       </class> <!-- com.parasoft.banking.testcases.VerifyCustomerLogin -->
+      <class name="com.parasoft.banking.testcases.VerifyCustomerRegistration">
+        <methods>
+          <include name="initConfiguration"/>
+          <include name="tearDown"/>
+          <include name="TC_004_RegisterCustomerSuccessfully"/>
+          <include name="endingTestCase"/>
+          <include name="quitBrowser"/>
+          <include name="startingTestCase"/>
+        </methods>
+      </class> <!-- com.parasoft.banking.testcases.VerifyCustomerRegistration -->
     </classes>
   </test> <!-- Customer Login(failed) -->
 </suite> <!-- Failed suite [Customer Access Scenarios] -->
