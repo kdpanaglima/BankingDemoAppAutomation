@@ -20,11 +20,7 @@ import com.parasoft.banking.utilities.Utilities;
 import com.relevantcodes.extentreports.LogStatus;
 
 public class VerifyCustomerLogin extends BasePage{
-	
-	@BeforeTest
-	public void setUp() {
-		initConfiguration();
-	}
+
 	
 	@BeforeMethod
 	public void startingTestCase(Method method) {

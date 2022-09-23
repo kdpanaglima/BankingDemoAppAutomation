@@ -15,6 +15,8 @@ import org.openqa.selenium.edge.EdgeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeMethod;
 
 import com.relevantcodes.extentreports.ExtentReports;
@@ -62,7 +64,7 @@ public class BasePage {
 	
 	@BeforeMethod
 	public void initConfiguration(){
-		
+		System.out.println("From base page");
 //		if(Constants.browser.equals("firefox")){
 //			
 //			driver = new FirefoxDriver();
@@ -120,6 +122,7 @@ public class BasePage {
 	
 	public synchronized static void setDriver(WebDriver driverRef) {
 		driver.set(driverRef);
+		
 	}
 	
 	public static WebDriver getDriver() {
@@ -148,10 +151,10 @@ public class BasePage {
 		return getDriver().getTitle();
 	}
 
-	
+	@AfterTest
 	public synchronized void quitBrowser(){
 	
-	
+		getDriver().close();
 		getDriver().quit();
 	}
 	

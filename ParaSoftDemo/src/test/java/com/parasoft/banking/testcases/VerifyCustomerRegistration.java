@@ -19,14 +19,10 @@ import com.parasoft.banking.utilities.Utilities;
 import com.relevantcodes.extentreports.LogStatus;
 
 public class VerifyCustomerRegistration extends BasePage{
-	
-	@BeforeTest
-	public void setUp() {
-		initConfiguration();
-	}
-	
+
 	@BeforeMethod
 	public void startingTestCase(Method method) {
+	
 		BasePage.logDebugMessage("****************************************************************************************");
 		BasePage.logDebugMessage("********** Start of Test Case: " + method.getName() + "  **********");
 		BasePage.logDebugMessage("****************************************************************************************");
