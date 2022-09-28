@@ -16,6 +16,9 @@ Web App being automated in this repository is a demo site called ParaBank, a ban
 This repository is also integrated with Jenkins. Reach out to me to get access with it. 
 As of now, Jenkins executes the test cases every 30 minutes. It can also be configured to send test reports as email every time a test failue is encountered during the scheduled test executions.
 
+<img width="945" alt="image" src="https://user-images.githubusercontent.com/29707017/192791899-cb396823-a23f-45de-b538-19b8015eda2e.png">
+
+
 ExtentReports library is integrated with Jenkins, test reports for the last executed build can be displayed within Jenkins.
 
 <!-- ROADMAP -->
